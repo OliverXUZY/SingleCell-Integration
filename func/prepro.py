@@ -36,7 +36,7 @@ def readH5pyFile(filename):
 
 
 class SingleCellDataset(Dataset):
-    def __init__(self, path_to_input_file, path_to_target_file) -> None:
+    def __init__(self,  path_to_input_file = None, path_to_target_file = None) -> None:
         self.input_file = path_to_input_file
         self.target_file = path_to_target_file
         with h5py.File(self.input_file, "r") as f:
@@ -46,11 +46,13 @@ class SingleCellDataset(Dataset):
             self.cells = group['axis1'][:].astype(str)
             self.features = group['axis0'][:].astype(str)
         
-        with h5py.File(self.target_file, "r") as f:
-            a_group_key = list(f.keys())[0]            
-            group = f[a_group_key]      # returns as a h5py dataset object
-            
-            self.targets = group['axis0'][:].astype(str)
+        ## only load target file while we train the model
+        if self.target_file:
+            with h5py.File(self.target_file, "r") as f:
+                a_group_key = list(f.keys())[0]            
+                group = f[a_group_key]      # returns as a h5py dataset object
+                
+                self.targets = group['axis0'][:].astype(str)
 
     def __len__(self):
         return len(self.cells)
@@ -62,6 +64,8 @@ class SingleCellDataset(Dataset):
             
             cells, inputs = self.cells[index], group['block0_values'][index]
         
+        if not self.target_file:
+            return cells, inputs
         with h5py.File(self.target_file, "r") as f:
             a_group_key = list(f.keys())[0]            
             group = f[a_group_key]      # returns as a h5py dataset object
