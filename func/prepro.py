@@ -62,7 +62,7 @@ class SingleCellDataset(Dataset):
             a_group_key = list(f.keys())[0]
             group = f[a_group_key]      # returns as a h5py dataset object
             
-            cells, inputs = self.cells[index], group['block0_values'][index]
+            cells, inputs = self.cells[index], group['block0_values'][index,:100] # add only for testing
         
         if not self.target_file:
             return cells, inputs
@@ -70,7 +70,7 @@ class SingleCellDataset(Dataset):
             a_group_key = list(f.keys())[0]            
             group = f[a_group_key]      # returns as a h5py dataset object
             
-            targets = group['block0_values'][index]
+            targets = group['block0_values'][index,:100]  # add only for testing
         
         return cells, inputs, targets
             
