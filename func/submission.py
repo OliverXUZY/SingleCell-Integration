@@ -120,16 +120,14 @@ def eva_dataframe(dataloader, responses, model_pre, eva_RNA = None):
 
         y_df_total  = pd.concat([y_df_total,y_df])
         i += 1
-        if i >= 5:
-            break
+        # if i >= 5:
+        #     break
     return y_df_total
 
 
 def main(preMat_protein):
     # read evaluation csv
-    print("1")
     evaluation = pd.read_csv(f"{FP_EVALUATION_IDS}")
-    print("2")
 
     if not exists(os.path.join(preMat_DIR, "submission_protein.csv.gz")):
         ## protein prediction
@@ -153,14 +151,9 @@ def main(preMat_protein):
 
     sub_RNA.to_csv(os.path.join(preMat_DIR, "submission_RNA.csv.gz"), index = False,compression='gzip')
 
-
-
-    
     # df = pd.concat((sub_protein,sub_RNA)).reset_index(drop=True)
 
     
-    
-
 if __name__ == "__main__":
     main(preMat_protein)
 
