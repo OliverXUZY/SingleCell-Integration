@@ -5,6 +5,7 @@ from os.path import exists
 import sys
 sys.path.append("/Users/zyxu/Documents/py/kris")
 
+import time
 import numpy as np
 import pandas as pd
 import h5py
@@ -43,8 +44,8 @@ preMat_protein = os.path.join(preMat_DIR,str(sys.argv[1]))  #
 # preMat_RNA = os.path.join(preMat_DIR, str(sys.argv[2]))  # 
 
 ### parameters
-BATCH_SIZE = 64
-model_pre = model_predict.test10
+BATCH_SIZE = 2048
+model_pre = model_predict.testfull
 
 
 def prot_submission(preMat_path, eva_protein):
@@ -81,6 +82,52 @@ def RNA_submission(preMat, eva_RNA, RNAs, cellId_RNA):
         retval.append({"cell_id": eva_RNA.iloc[i,1], "gene_id": eva_RNA.iloc[i,2], "target": preMat[rowId, colId]})
     return retval
 
+## This function is optimized by below v2
+# def eva_dataframe(dataloader, responses, model_pre, eva_RNA = None):
+#     """
+#     only for RNA prediction, since multiome is too large, we exchange with this minibatch method, each time, we predict a minibatch
+#     then we check whether this batch contains any (cell_id, RNA) pair contained in evaluation matrix, if it does, extract those
+
+#     dataloader: test loader
+#     responses: the response columns
+#     model_pre: any model support forward prediction
+#     eva_RNA: the evaluation matrix contains only multi_ome
+
+#     eva_protein = evaluation.iloc[:48663*140]
+#     eva_RNA = evaluation.iloc[48663*140:]
+
+#     usage:
+#     y_df = eva_dataframe(testloader_multi, trainloader_multi.dataset.targets, model_pre, eva_RNA)
+#     """
+
+#     y_df_total = pd.DataFrame()
+#     eval_cells = eva_RNA.cell_id.unique()
+#     i=0
+#     for cell_ids, inputs in tqdm(dataloader):
+#         y_hat_batch = model_pre(inputs).cpu().detach().numpy()
+#         y_df = pd.DataFrame(y_hat_batch).T
+#         y_df.columns = cell_ids
+#         y_df['responses'] = responses
+#         y_df = pd.melt(y_df,id_vars = 'responses', value_vars=y_df.columns[:y_df.shape[1]-1]) 
+#         y_df.columns = ["gene_id", "cell_id", "target"]
+
+#         # check cell_ids first, whether any cells in evaluations
+#         y_df = y_df[y_df['cell_id'].isin(eval_cells)]
+#         if y_df.empty:
+#             continue
+        
+#         temp = eva_RNA[eva_RNA['cell_id'].isin(y_df.cell_id)]
+#         eva_RNA_cell_gene_selected = temp[temp['gene_id'].isin(y_df.gene_id)]
+#         y_df = pd.merge(eva_RNA_cell_gene_selected,y_df, how = "inner")
+
+#         y_df_total  = pd.concat([y_df_total,y_df])
+#         i += 1
+#         # if i >= 5:
+#         #     break
+#     return y_df_total
+
+
+## v2
 def eva_dataframe(dataloader, responses, model_pre, eva_RNA = None):
     """
     only for RNA prediction, since multiome is too large, we exchange with this minibatch method, each time, we predict a minibatch
@@ -97,33 +144,34 @@ def eva_dataframe(dataloader, responses, model_pre, eva_RNA = None):
     usage:
     y_df = eva_dataframe(testloader_multi, trainloader_multi.dataset.targets, model_pre, eva_RNA)
     """
-
+    start_time = time.time()
     y_df_total = pd.DataFrame()
     eval_cells = eva_RNA.cell_id.unique()
-    i=0
+    i=1
     for cell_ids, inputs in tqdm(dataloader):
+        ## first filter the cells to be estimated
+        cell_ids = pd.Series(cell_ids)
+        inputs = inputs[cell_ids.isin(eval_cells)]
+        if inputs.shape[0] == 0:
+            continue
+
         y_hat_batch = model_pre(inputs).cpu().detach().numpy()
         y_df = pd.DataFrame(y_hat_batch).T
-        y_df.columns = cell_ids
+        y_df.columns = cell_ids[cell_ids.isin(eval_cells)]
         y_df['responses'] = responses
         y_df = pd.melt(y_df,id_vars = 'responses', value_vars=y_df.columns[:y_df.shape[1]-1]) 
         y_df.columns = ["gene_id", "cell_id", "target"]
 
-        # check cell_ids first, whether any cells in evaluations
-        y_df = y_df[y_df['cell_id'].isin(eval_cells)]
-        if y_df.empty:
-            continue
         
         temp = eva_RNA[eva_RNA['cell_id'].isin(y_df.cell_id)]
         eva_RNA_cell_gene_selected = temp[temp['gene_id'].isin(y_df.gene_id)]
         y_df = pd.merge(eva_RNA_cell_gene_selected,y_df, how = "inner")
 
         y_df_total  = pd.concat([y_df_total,y_df])
-        i += 1
-        # if i >= 5:
-        #     break
-    return y_df_total
+        print(f"Batch {i} | {len(dataloader)}. Time elapsed: {(time.time() - start_time)/60} min")
+        i+=1
 
+    return y_df_total
 
 def main(preMat_protein):
     # read evaluation csv
@@ -141,15 +189,15 @@ def main(preMat_protein):
     ## RNA prediction
     eva_RNA = evaluation.iloc[48663*140:]
 
-    test_multi = SingleCellDataset_test(FP_MULTIOME_TEST_INPUTS)
+    test_multi = SingleCellDataset(FP_MULTIOME_TEST_INPUTS)
     testloader_multi = DataLoader(test_multi, batch_size=BATCH_SIZE)
-    train_multi = SingleCellDataset_test(FP_MULTIOME_TRAIN_INPUTS,FP_MULTIOME_TRAIN_TARGETS)
+    train_multi = SingleCellDataset(FP_MULTIOME_TRAIN_INPUTS,FP_MULTIOME_TRAIN_TARGETS)
     trainloader_multi = DataLoader(train_multi, batch_size=BATCH_SIZE)
 
     sub_RNA = eva_dataframe(testloader_multi, trainloader_multi.dataset.targets, model_pre, eva_RNA)
     sub_RNA = sub_RNA.sort_values(by=['row_id'])
 
-    sub_RNA.to_csv(os.path.join(preMat_DIR, "submission_RNA.csv.gz"), index = False,compression='gzip')
+    sub_RNA.to_csv(os.path.join(preMat_DIR, "submission_RNA_full.csv.gz"), index = False,compression='gzip')
 
     # df = pd.concat((sub_protein,sub_RNA)).reset_index(drop=True)
 
