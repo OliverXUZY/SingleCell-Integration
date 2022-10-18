@@ -34,6 +34,32 @@ def readH5pyFile(filename):
         
     return d
 
+def readH5pyFile_cols(filename, startcol = 0, endcol = 2500):
+    with h5py.File(filename, "r") as f:
+        # Print all root level object names (aka keys) 
+        # these can be group or dataset names 
+        # print("Keys: %s" % f.keys())
+        # get first object name/key; may or may NOT be a group
+        a_group_key = list(f.keys())[0]
+        # print(a_group_key)
+
+        # get the object type for a_group_key: usually group or dataset
+        # print(type(f[a_group_key])) 
+
+        # If a_group_key is a group name, 
+        # this gets the object names in the group and returns as a list
+        data = list(f[a_group_key])
+        
+        group = f[a_group_key]      # returns as a h5py dataset object
+
+        # print(list(group.keys()))
+
+        d = {}
+        d["cell_ids"] = group['axis1'][:].astype(str)
+        d["features"] = group['axis0'][startcol:endcol].astype(str)
+        d["matrix"] = group['block0_values'][:,startcol:endcol]
+        
+    return d
 
 class SingleCellDataset(Dataset):
     def __init__(self,  path_to_input_file = None, path_to_target_file = None) -> None:
@@ -76,9 +102,10 @@ class SingleCellDataset(Dataset):
 
 
 class SingleCellDataset_test(Dataset):
-    def __init__(self,  path_to_input_file = None, path_to_target_file = None) -> None:
+    def __init__(self,  path_to_input_file = None, path_to_target_file = None, testresponse = 10) -> None:
         self.input_file = path_to_input_file
         self.target_file = path_to_target_file
+        self.testresponse = testresponse
         with h5py.File(self.input_file, "r") as f:
             a_group_key = list(f.keys())[0]            
             group = f[a_group_key]      # returns as a h5py dataset object
@@ -92,7 +119,7 @@ class SingleCellDataset_test(Dataset):
                 a_group_key = list(f.keys())[0]            
                 group = f[a_group_key]      # returns as a h5py dataset object
                 
-                self.targets = group['axis0'][:10].astype(str)
+                self.targets = group['axis0'][:self.testresponse].astype(str)
 
     def __len__(self):
         return len(self.cells)
@@ -110,7 +137,7 @@ class SingleCellDataset_test(Dataset):
             a_group_key = list(f.keys())[0]            
             group = f[a_group_key]      # returns as a h5py dataset object
             
-            targets = group['block0_values'][index,:10]  # add only for testing
+            targets = group['block0_values'][index,:self.testresponse]  # add only for testing
         
         return cells, inputs, targets
             
