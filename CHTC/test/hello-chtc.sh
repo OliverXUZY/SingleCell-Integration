@@ -1,4 +1,4 @@
-#!\bin\bash
+#!/bin/bash
 #
 # hello-chtc.sh
 # My very first CHTC job

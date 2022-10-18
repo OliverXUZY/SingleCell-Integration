@@ -1,2 +1,2 @@
 #!/bin/bash
-python testPy.py $1
+python basic_method.py $1

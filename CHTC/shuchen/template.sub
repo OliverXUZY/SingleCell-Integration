@@ -13,10 +13,10 @@ arguments = $(ProcID)
 
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
-transfer_input_files = testPy.py file1 file2
+transfer_input_files = testPy.py train_multi_inputs.h5 train_multi_targets.h5 test_multi_inputs.h5
 
 request_cpus = 1
-request_memory = 1GB
+request_memory = 100GB
 request_disk = 1GB
 
 queue 1

@@ -40,6 +40,6 @@ request_memory = 1GB
 request_disk = 1MB
 
 #
-# Tell HTCondor to run 3 instances of our job:
+# Tell HTCondor to run 1 instances of our job:
 
-queue 3
+queue 1
