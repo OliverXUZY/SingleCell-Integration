@@ -5,7 +5,7 @@
 
 # import gc
 # import func.data as dt
-# import hdf5plugin
+import hdf5plugin
 import joblib
 import h5py
 
@@ -47,7 +47,7 @@ def readH5pyFile(filename):
 
 # In[52]:
 
-print(RAW_DATA_DIR / f"train_{DATA_NAME}_inputs.h5")
+print("Loading data...")
 
 train_input = readH5pyFile(RAW_DATA_DIR / f"train_{DATA_NAME}_inputs.h5")
 train_target = readH5pyFile(RAW_DATA_DIR / f"train_{DATA_NAME}_targets.h5")
@@ -57,6 +57,9 @@ train_target_val = train_target['block0_values']
 
 # In[ ]:
 # Run standardization and PCA
+
+print("Running PCA...")
+
 p = 500
 train_sdsc = StandardScaler()
 train_input_sdsc = train_sdsc.fit_transform(train_input_val)
@@ -76,10 +79,15 @@ y_train = train_target_val
 
 
 # In[]:
+
+print("Fitting the model...")
+
 model = Lasso(alpha = 0.01)
 model.fit(X_train, y_train)
 
 # Make prediction
+
+print("Making prediction...")
 
 test_input = readH5pyFile(RAW_DATA_DIR / f"test_{DATA_NAME}_inputs.h5")
 test_input_val = test_input["block0_values"]
@@ -91,8 +99,9 @@ np.savetxt(PRO_DATA_DIR / f"test_{DATA_NAME}_{METHOD_NAME}_pred.csv", y_pred, de
 
 # In[ ]:
 # Save intermediate results
-save = False
-if save:
+SAVE = False
+if SAVE:
+    print("Saving intermediate results...")
     joblib.dump(train_sdsc, METHOD_DIR / f"train_{DATA_NAME}_sdsc.m")
     joblib.dump(train_pca, METHOD_DIR / f"train_{DATA_NAME}_pca.m")
     # np.savetxt(PRO_DATA_DIR / f"train_{DATA_NAME}_pca.csv", X_train, delimiter=",")
