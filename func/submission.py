@@ -110,7 +110,7 @@ def eva_dataframe(dataloader, responses, model_pre, eva_RNA = None):
         y_df = pd.DataFrame(y_hat_batch).T
         y_df.columns = cell_ids[cell_ids.isin(eval_cells)]
         y_df['responses'] = responses
-        y_df = pd.melt(y_df,id_vars = 'responses', value_vars=y_df.columns[:-1]) # make sure is equal to :y_df.shape[1]-1
+        y_df = pd.melt(y_df,id_vars = 'responses', value_vars=y_df.columns[:-1])
         y_df.columns = ["gene_id", "cell_id", "target"]
 
         temp = eva_RNA[eva_RNA['cell_id'].isin(y_df.cell_id)]
