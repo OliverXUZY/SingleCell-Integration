@@ -19,7 +19,7 @@ transfer_input_files = testStaging.py, prepro.py
 Requirements = (Target.HasCHTCStaging == true)
 
 request_cpus = 1
-request_memory = 15GB
-request_disk = 15GB
+request_memory = 100GB
+request_disk = 1GB
 
 queue 1
