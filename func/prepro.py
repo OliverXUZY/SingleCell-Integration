@@ -1,5 +1,7 @@
 import h5py
 import hdf5plugin
+import numpy as np
+import pandas as pd
 
 import torch
 from torch.utils.data import Dataset
@@ -62,9 +64,10 @@ def readH5pyFile_cols(filename, startcol = 0, endcol = 2500):
     return d
 
 class SingleCellDataset(Dataset):
-    def __init__(self,  path_to_input_file = None, path_to_target_file = None) -> None:
+    def __init__(self,  path_to_input_file = None, path_to_target_file = None, path_to_kmeans_target = None) -> None:
         self.input_file = path_to_input_file
         self.target_file = path_to_target_file
+        self.kmeans_target_file = path_to_kmeans_target
         with h5py.File(self.input_file, "r") as f:
             a_group_key = list(f.keys())[0]            
             group = f[a_group_key]      # returns as a h5py dataset object
@@ -79,6 +82,9 @@ class SingleCellDataset(Dataset):
                 group = f[a_group_key]      # returns as a h5py dataset object
                 
                 self.targets = group['axis0'][:].astype(str)
+        
+        if self.kmeans_target_file:
+            self.k_centers = np.float32(pd.read_csv(self.kmeans_target_file,compression='gzip').values)
 
     def __len__(self):
         return len(self.cells)
@@ -90,14 +96,19 @@ class SingleCellDataset(Dataset):
             
             cells, inputs = self.cells[index], group['block0_values'][index,:] # add only for testing
         
-        if not self.target_file:
+        if not self.target_file and not self.kmeans_target_file:
             return cells, inputs
-        with h5py.File(self.target_file, "r") as f:
-            a_group_key = list(f.keys())[0]            
-            group = f[a_group_key]      # returns as a h5py dataset object
-            
-            targets = group['block0_values'][index,:]  # add only for testing
         
+        if self.target_file:
+            with h5py.File(self.target_file, "r") as f:
+                a_group_key = list(f.keys())[0]            
+                group = f[a_group_key]      # returns as a h5py dataset object
+                
+                targets = group['block0_values'][index,:]  # add only for testing
+
+        elif self.kmeans_target_file:
+            targets = self.k_centers[index,:]
+
         return cells, inputs, targets
 
 
