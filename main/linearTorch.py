@@ -34,6 +34,7 @@ FP_SUBMISSION = os.path.join(DATA_DIR,"sample_submission.csv")
 FP_EVALUATION_IDS = os.path.join(DATA_DIR,"evaluation_ids.csv")
 
 FP_MULTIOME_TRAIN_TARGETS_k_centers = "models/k_centers_targets.csv.gz"
+FP_MULTIOME_TRAIN_weightPCA = os.path.join(DATA_DIR,"weightPCA.csv.gz")
 
 BATCH_SIZE = 256
 # BATCH_SIZE = 1024
@@ -41,6 +42,8 @@ DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
 LEARNING_RATE = 1e-3
 WEIGHT_DECAY = 0
 MOMENTUM = 0
+
+EPOCH = 5
 
 def train(model, train_loader, optimizer, epoch):
     model.train()
@@ -62,13 +65,14 @@ def train(model, train_loader, optimizer, epoch):
         # LOGGING
         if not batch_id % 50:
                print("Epoch: {}  |  Batch: {}/{}  |  Cost: {}".format(epoch+1, batch_id, len(train_loader), loss))
+        
 
 
 
 
 def main():
     print("start reading weightPCA--")
-    weightPCA = pd.read_csv("models/weightPCA.csv.gz", compression = 'gzip').values
+    weightPCA = pd.read_csv(FP_MULTIOME_TRAIN_weightPCA, compression = 'gzip').values
     weight = torch.from_numpy(weightPCA).to(torch.float32).T
     print("finish reading weightPCA--")
     print("weightPCA shape: ", weightPCA.shape)
@@ -93,12 +97,15 @@ def main():
 
     # training loop
     train_loss_total = []
-    for epoch in range(5):
+    for epoch in range(EPOCH):
         train_loss = train(model, trainloader_multi, optimizer, epoch)
         train_loss_total.append(train_loss)
         # LOGGING
         if epoch % 1 == 0:
             print("Epoch: {}/{}  === Train Cost: {}".format(epoch + 1, 20000, train_loss))
+    
+    torch.save(model.state_dict(),os.path.join("model_epoch{}.pt".format(EPOCH)))
+
 
 
 if __name__ == "__main__":
