@@ -16,8 +16,9 @@ from torch.utils.data import Dataset
 from torch.utils.data import DataLoader
 from torch import nn
 
-from func.prepro import SingleCellDataset, SingleCellDataset_test
-from models import model_predict
+from prepro import SingleCellDataset, SingleCellDataset_test
+import model_predict
+from model_predict import LinearRegression, recover_from_cluster
 
 
 
@@ -36,8 +37,16 @@ FP_MULTIOME_TEST_INPUTS = os.path.join(DATA_DIR,"test_multi_inputs.h5")
 FP_SUBMISSION = os.path.join(DATA_DIR,"sample_submission.csv")
 FP_EVALUATION_IDS = os.path.join(DATA_DIR,"evaluation_ids.csv")
 
-preMat_DIR = "preMat"
-preMat_protein = os.path.join(preMat_DIR,str(sys.argv[1]))
+FP_MULTIOME_TRAIN_weightPCA = os.path.join(DATA_DIR,"weightPCA.csv.gz")
+
+FP_cluster_labels = os.path.join(DATA_DIR,"cluster_labels.npy")
+
+FP_submission_protein = os.path.join(DATA_DIR,"submission_protein.csv.gz")
+
+### parameters
+BATCH_SIZE = 2048
+
+START_EPOCH = 5
 
 ### parameters
 BATCH_SIZE = 2048
@@ -79,7 +88,7 @@ def RNA_submission(preMat, eva_RNA, RNAs, cellId_RNA):
     return retval
 
 
-def eva_dataframe(dataloader, responses, model_pre, eva_RNA = None):
+def eva_dataframe(dataloader, responses, model_pre, eva_RNA, cluster_model_labels = None, nz_index = None):
     """
     only for RNA prediction, since multiome is too large, we exchange with this minibatch method, each time, we predict a minibatch
     then we check whether this batch contains any (cell_id, RNA) pair contained in evaluation matrix, if it does, extract those
@@ -99,7 +108,7 @@ def eva_dataframe(dataloader, responses, model_pre, eva_RNA = None):
     y_list = []
     eval_cells = eva_RNA.cell_id.unique()
     i=1
-    for cell_ids, inputs in tqdm(dataloader):
+    for cell_ids, inputs in dataloader:
         ## first filter the cells to be estimated
         cell_ids = pd.Series(cell_ids)
         inputs = inputs[cell_ids.isin(eval_cells)]
@@ -107,6 +116,10 @@ def eva_dataframe(dataloader, responses, model_pre, eva_RNA = None):
             continue
 
         y_hat_batch = model_pre(inputs).cpu().detach().numpy()
+
+        ### 100 responses to 23418 responses
+        y_hat_batch = recover_from_cluster(y_hat_batch, cluster_model_labels, nz_index, 23418)
+
         y_df = pd.DataFrame(y_hat_batch).T
         y_df.columns = cell_ids[cell_ids.isin(eval_cells)]
         y_df['responses'] = responses
@@ -143,6 +156,20 @@ def main(preMat_protein):
     testloader_multi = DataLoader(test_multi, batch_size=BATCH_SIZE)
     train_multi = SingleCellDataset(FP_MULTIOME_TRAIN_INPUTS,FP_MULTIOME_TRAIN_TARGETS)
     trainloader_multi = DataLoader(train_multi, batch_size=BATCH_SIZE)
+
+    with open(FP_cluster_labels, 'rb') as f:
+        a = np.load(f)
+    cluster_model_labels = a[0,:]
+    nz_index = a[1,:]
+
+    print("start reading weightPCA--")
+    weightPCA = pd.read_csv(FP_MULTIOME_TRAIN_weightPCA, compression = 'gzip').values
+    weight = torch.from_numpy(weightPCA).to(torch.float32).T
+    print("finish reading weightPCA--")
+    print("weightPCA shape: ", weight.shape)
+    model = LinearRegression(weight)
+    model.load_state_dict(torch.load("model_epoch{}.pt".format(START_EPOCH)))
+    model_pre = model
 
     sub_RNA = eva_dataframe(testloader_multi, trainloader_multi.dataset.targets, model_pre, eva_RNA)
     sub_RNA = sub_RNA.sort_values(by=['row_id'])

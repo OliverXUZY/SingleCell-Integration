@@ -28,6 +28,8 @@ class LinearRegression(nn.Module):
         return output
 
 
+## v1
+'''
 def recover_from_cluster(raw_pred, cluster_model, nz_index, n_targets, batch_size):
     # raw_pred: prediction for those clusters, size: batch_size*raw_pred
     # cluster_model: the model used for clustering
@@ -38,5 +40,19 @@ def recover_from_cluster(raw_pred, cluster_model, nz_index, n_targets, batch_siz
     n_y = cluster_model.n_clusters # how many clusters do we have
     for i_y in range(n_y):          # i_y is the index for clusters
         i_nz = np.where(cluster_model.labels_==i_y)    #i_nz is the index (in the nonzero items) where the item belongs to cluster i_y
+        pred[:,nz_index[i_nz]] = np.tile(raw_pred[:,i_y],[1,len(i_nz)]).T    # nz_index[i_nz] is the index (in the full prediction) where the item belongs to cluster i_y
+    return pred
+'''
+def recover_from_cluster(raw_pred, cluster_model_labels, nz_index, n_targets):
+    # raw_pred: prediction for those clusters, size: batch_size*raw_pred
+    # cluster_model: the model used for clustering
+    # nz_index: the index for all non-zero values (columns), size: number of non-zero columns
+    # n_targets: how many targets in total
+    # batch_size: number of observations (rows)
+    batch_size = raw_pred.shape[0]
+    pred = np.zeros([batch_size, n_targets])
+    n_y = 100 # how many clusters do we have
+    for i_y in range(n_y):          # i_y is the index for clusters
+        i_nz = np.where(cluster_model_labels==i_y)    #i_nz is the index (in the nonzero items) where the item belongs to cluster i_y
         pred[:,nz_index[i_nz]] = np.tile(raw_pred[:,i_y],[1,len(i_nz)]).T    # nz_index[i_nz] is the index (in the full prediction) where the item belongs to cluster i_y
     return pred
