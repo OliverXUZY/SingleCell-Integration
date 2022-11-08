@@ -1,0 +1,7 @@
+Matplotlib created a temporary config/cache directory at /var/lib/condor/execute/slot1/dir_66485/matplotlib-kvpo68u1 because the default path (/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot1/dir_66485/linearTorch.py", line 135, in <module>
+    main()
+  File "/var/lib/condor/execute/slot1/dir_66485/linearTorch.py", line 128, in main
+    torch.save(model.state_dict(),os.path.join("model_epoch{}.pt".format(START_RPOCH + EPOCH)))
+NameError: name 'START_RPOCH' is not defined

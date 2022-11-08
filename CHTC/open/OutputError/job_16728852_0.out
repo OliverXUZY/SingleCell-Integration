@@ -1,0 +1,53 @@
+start reading weightPCA--
+finish reading weightPCA--
+weightPCA shape:  (1000, 228942)
+Epoch: 1  |  Batch: 0/414  |  Cost: 8.463397979736328
+Epoch: 1  |  Batch: 50/414  |  Cost: 3.6033403873443604
+Epoch: 1  |  Batch: 100/414  |  Cost: 2.238302707672119
+Epoch: 1  |  Batch: 150/414  |  Cost: 1.8023165464401245
+Epoch: 1  |  Batch: 200/414  |  Cost: 2.2443959712982178
+Epoch: 1  |  Batch: 250/414  |  Cost: 1.9135760068893433
+Epoch: 1  |  Batch: 300/414  |  Cost: 2.2954206466674805
+Epoch: 1  |  Batch: 350/414  |  Cost: 1.9482841491699219
+Epoch: 1  |  Batch: 400/414  |  Cost: 2.037032127380371
+Epoch: 1/20000  === Train Cost: None
+Epoch: 2  |  Batch: 0/414  |  Cost: 1.8260382413864136
+Epoch: 2  |  Batch: 50/414  |  Cost: 2.024087429046631
+Epoch: 2  |  Batch: 100/414  |  Cost: 1.7851006984710693
+Epoch: 2  |  Batch: 150/414  |  Cost: 1.7468737363815308
+Epoch: 2  |  Batch: 200/414  |  Cost: 2.151789903640747
+Epoch: 2  |  Batch: 250/414  |  Cost: 1.8621569871902466
+Epoch: 2  |  Batch: 300/414  |  Cost: 2.257547378540039
+Epoch: 2  |  Batch: 350/414  |  Cost: 1.9050190448760986
+Epoch: 2  |  Batch: 400/414  |  Cost: 1.9786922931671143
+Epoch: 2/20000  === Train Cost: None
+Epoch: 3  |  Batch: 0/414  |  Cost: 1.8063174486160278
+Epoch: 3  |  Batch: 50/414  |  Cost: 2.000678062438965
+Epoch: 3  |  Batch: 100/414  |  Cost: 1.7564480304718018
+Epoch: 3  |  Batch: 150/414  |  Cost: 1.7313061952590942
+Epoch: 3  |  Batch: 200/414  |  Cost: 2.1332621574401855
+Epoch: 3  |  Batch: 250/414  |  Cost: 1.8208149671554565
+Epoch: 3  |  Batch: 300/414  |  Cost: 2.2426486015319824
+Epoch: 3  |  Batch: 350/414  |  Cost: 1.881657361984253
+Epoch: 3  |  Batch: 400/414  |  Cost: 1.9400008916854858
+Epoch: 3/20000  === Train Cost: None
+Epoch: 4  |  Batch: 0/414  |  Cost: 1.7924859523773193
+Epoch: 4  |  Batch: 50/414  |  Cost: 1.9869917631149292
+Epoch: 4  |  Batch: 100/414  |  Cost: 1.7402713298797607
+Epoch: 4  |  Batch: 150/414  |  Cost: 1.721036434173584
+Epoch: 4  |  Batch: 200/414  |  Cost: 2.121992349624634
+Epoch: 4  |  Batch: 250/414  |  Cost: 1.793962001800537
+Epoch: 4  |  Batch: 300/414  |  Cost: 2.233590602874756
+Epoch: 4  |  Batch: 350/414  |  Cost: 1.8671247959136963
+Epoch: 4  |  Batch: 400/414  |  Cost: 1.914018988609314
+Epoch: 4/20000  === Train Cost: None
+Epoch: 5  |  Batch: 0/414  |  Cost: 1.7826950550079346
+Epoch: 5  |  Batch: 50/414  |  Cost: 1.977970838546753
+Epoch: 5  |  Batch: 100/414  |  Cost: 1.7303346395492554
+Epoch: 5  |  Batch: 150/414  |  Cost: 1.7137479782104492
+Epoch: 5  |  Batch: 200/414  |  Cost: 2.1143462657928467
+Epoch: 5  |  Batch: 250/414  |  Cost: 1.7753394842147827
+Epoch: 5  |  Batch: 300/414  |  Cost: 2.227506399154663
+Epoch: 5  |  Batch: 350/414  |  Cost: 1.85738205909729
+Epoch: 5  |  Batch: 400/414  |  Cost: 1.8954482078552246
+Epoch: 5/20000  === Train Cost: None

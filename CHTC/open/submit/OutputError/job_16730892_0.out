@@ -1,0 +1,32 @@
+---protein already exists!---
+start reading weightPCA--
+finish reading weightPCA--
+weightPCA shape:  torch.Size([228942, 1000])
+Batch 1 | 28. Time elapsed: 1.015476131439209 min
+Batch 2 | 28. Time elapsed: 1.978944512208303 min
+Batch 3 | 28. Time elapsed: 3.008922866980235 min
+Batch 4 | 28. Time elapsed: 4.065548344453176 min
+Batch 5 | 28. Time elapsed: 5.052220340569814 min
+Batch 6 | 28. Time elapsed: 6.094167530536652 min
+Batch 7 | 28. Time elapsed: 7.266390442848206 min
+Batch 8 | 28. Time elapsed: 8.267170321941375 min
+Batch 9 | 28. Time elapsed: 9.25918675661087 min
+Batch 10 | 28. Time elapsed: 10.245877993106841 min
+Batch 11 | 28. Time elapsed: 11.30146030584971 min
+Batch 12 | 28. Time elapsed: 12.310193041960398 min
+Batch 13 | 28. Time elapsed: 13.349068248271942 min
+Batch 14 | 28. Time elapsed: 14.373900278409321 min
+Batch 15 | 28. Time elapsed: 15.328130455811818 min
+Batch 16 | 28. Time elapsed: 16.224399399757385 min
+Batch 17 | 28. Time elapsed: 17.30351579984029 min
+Batch 18 | 28. Time elapsed: 18.235618126392364 min
+Batch 19 | 28. Time elapsed: 19.205839971701305 min
+Batch 20 | 28. Time elapsed: 20.218641118208566 min
+Batch 21 | 28. Time elapsed: 21.236969971656798 min
+Batch 22 | 28. Time elapsed: 22.1784601132075 min
+Batch 23 | 28. Time elapsed: 23.264423310756683 min
+Batch 24 | 28. Time elapsed: 24.17088889280955 min
+Batch 25 | 28. Time elapsed: 25.215995836257935 min
+Batch 26 | 28. Time elapsed: 26.32878874540329 min
+Batch 27 | 28. Time elapsed: 27.423418760299683 min
+Batch 28 | 28. Time elapsed: 27.75446232954661 min

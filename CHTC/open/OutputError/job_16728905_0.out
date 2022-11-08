@@ -1,0 +1,12 @@
+start reading weightPCA--
+finish reading weightPCA--
+weightPCA shape:  torch.Size([228942, 1000])
+Epoch: 6  |  Batch: 0/414  |  Cost: 1.775275707244873
+Epoch: 6  |  Batch: 50/414  |  Cost: 1.9406107664108276
+Epoch: 6  |  Batch: 100/414  |  Cost: 1.7019485235214233
+Epoch: 6  |  Batch: 150/414  |  Cost: 1.596924901008606
+Epoch: 6  |  Batch: 200/414  |  Cost: 2.021097421646118
+Epoch: 6  |  Batch: 250/414  |  Cost: 1.6756640672683716
+Epoch: 6  |  Batch: 300/414  |  Cost: 2.2166571617126465
+Epoch: 6  |  Batch: 350/414  |  Cost: 1.7894283533096313
+Epoch: 6  |  Batch: 400/414  |  Cost: 1.7206569910049438
