@@ -44,8 +44,8 @@ LEARNING_RATE = 5e-3
 WEIGHT_DECAY = 0
 MOMENTUM = 0
 
-START_EPOCH = 5
-EPOCH = 10
+START_EPOCH = 0
+EPOCH = 1
 
 ##====================== train and test function
 def compute_epoch_loss(model, data_loader):
@@ -83,9 +83,12 @@ def train(model, train_loader, optimizer, epoch, start_time):
         optimizer.step()
 
         # LOGGING
-        if not batch_id % 50:
+        if not batch_id % 1:
                print("Epoch: {}  |  Batch: {}/{}  |  Cost: {}".format(epoch+1+START_EPOCH, batch_id, len(train_loader), loss))
                print(f"-- Time elapsed: {(time.time() - start_time)/60} min --")
+        
+        if batch_id > 3:
+            break
 
     train_loss = compute_epoch_loss(model, train_loader)
 
@@ -130,13 +133,14 @@ def main():
         with open(FP_MULTIOME_INPUTS_PROJECTION, 'wb') as handle:
             pkl.dump(projections, handle, protocol=pkl.HIGHEST_PROTOCOL)
 
-            
+
     model = LinearRegression(projections, DEVICE)
     optimizer = torch.optim.SGD(model.parameters(), lr=LEARNING_RATE, weight_decay=WEIGHT_DECAY, momentum=MOMENTUM)
 
     # training loop
     train_loss_total = []
-    model.load_state_dict(torch.load("model_epoch{}.pt".format(START_EPOCH)))
+    if START_EPOCH > 0:
+        model.load_state_dict(torch.load("model_epoch{}.pt".format(START_EPOCH)))
     print("start training--")
     print(f"-- Time elapsed: {(time.time() - start_time)/60} min --")
     for epoch in range(EPOCH):
