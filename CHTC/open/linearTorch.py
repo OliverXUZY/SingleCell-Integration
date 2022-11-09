@@ -35,7 +35,7 @@ FP_EVALUATION_IDS = os.path.join(DATA_DIR,"evaluation_ids.csv")
 
 FP_MULTIOME_TRAIN_TARGETS_k_centers = os.path.join(DATA_DIR,"k_centers_targets.csv.gz")
 FP_MULTIOME_TRAIN_weightPCA = os.path.join(DATA_DIR,"weightPCA.csv.gz")
-FP_MULTIOME_INPUTS_PROJECTION = os.path.join(DATA_DIR,"test/inputs_projection.csv.gz")
+FP_MULTIOME_INPUTS_PROJECTION = os.path.join(DATA_DIR,"test/inputs_projection.pickle")
 
 BATCH_SIZE = 256
 # BATCH_SIZE = 1024
@@ -117,36 +117,39 @@ def main():
     #pkl.dumps(INPUT_PROJECTIONS)
     # save the file
     if os.path.exists(FP_MULTIOME_INPUTS_PROJECTION):
-        pkl.load(FP_MULTIOME_INPUTS_PROJECTION)
+        print("Projection Exists")
+        with open(FP_MULTIOME_INPUTS_PROJECTION, 'rb') as handle:
+            projections = pkl.load(handle)
     else:
+        print("Projection Doesn't Exists")
         projections = {}
         weight = weight.to(DEVICE)
         for batch_id, (_, features, _) in enumerate(trainloader_multi):
             features = features.to(DEVICE)
             projections[batch_id] = features.matmul(weight)
-        pkl.dumps(projections, FP_MULTIOME_INPUTS_PROJECTION, protocol=pkl.HIGHEST_PROTOCOL)
+        with open(FP_MULTIOME_INPUTS_PROJECTION, 'wb') as handle:
+            pkl.dump(projections, handle, protocol=pkl.HIGHEST_PROTOCOL)
+    # model = LinearRegression(projections, DEVICE)
+    # optimizer = torch.optim.SGD(model.parameters(), lr=LEARNING_RATE, weight_decay=WEIGHT_DECAY, momentum=MOMENTUM)
 
-    model = LinearRegression(projections, DEVICE)
-    optimizer = torch.optim.SGD(model.parameters(), lr=LEARNING_RATE, weight_decay=WEIGHT_DECAY, momentum=MOMENTUM)
+    # # training loop
+    # train_loss_total = []
+    # model.load_state_dict(torch.load("model_epoch{}.pt".format(START_EPOCH)))
+    # print("start training--")
+    # print(f"-- Time elapsed: {(time.time() - start_time)/60} min --")
+    # for epoch in range(EPOCH):
+    #     train_loss = train(model, trainloader_multi, optimizer, epoch, start_time)
+    #     train_loss_total.append(train_loss)
+    #     # LOGGING
+    #     if epoch % 1 == 0:
+    #         print("Epoch: {}/{}  === Train Cost: {}".format(epoch + 1 + START_EPOCH, START_EPOCH + EPOCH, train_loss))
+    #         print(f"-- Time elapsed: {(time.time() - start_time)/60} min --")
 
-    # training loop
-    train_loss_total = []
-    model.load_state_dict(torch.load("model_epoch{}.pt".format(START_EPOCH)))
-    print("start training--")
-    print(f"-- Time elapsed: {(time.time() - start_time)/60} min --")
-    for epoch in range(EPOCH):
-        train_loss = train(model, trainloader_multi, optimizer, epoch, start_time)
-        train_loss_total.append(train_loss)
-        # LOGGING
-        if epoch % 1 == 0:
-            print("Epoch: {}/{}  === Train Cost: {}".format(epoch + 1 + START_EPOCH, START_EPOCH + EPOCH, train_loss))
-            print(f"-- Time elapsed: {(time.time() - start_time)/60} min --")
-
-    torch.save(model.state_dict(),os.path.join("model_epoch{}.pt".format(START_EPOCH + EPOCH)))
-    ##====================== record cost
-    with open(f"cost_epoch{START_EPOCH + EPOCH}.txt", "w") as f:
-        for s in train_loss_total:
-            f.write(str(s) +"\n")
+    # torch.save(model.state_dict(),os.path.join("model_epoch{}.pt".format(START_EPOCH + EPOCH)))
+    # ##====================== record cost
+    # with open(f"cost_epoch{START_EPOCH + EPOCH}.txt", "w") as f:
+    #     for s in train_loss_total:
+    #         f.write(str(s) +"\n")
 
 if __name__ == "__main__":
     main()
