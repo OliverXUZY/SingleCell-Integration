@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import pickle as pkl
 
 import torch
 import torch.nn as nn
@@ -34,6 +35,7 @@ FP_EVALUATION_IDS = os.path.join(DATA_DIR,"evaluation_ids.csv")
 
 FP_MULTIOME_TRAIN_TARGETS_k_centers = os.path.join(DATA_DIR,"k_centers_targets.csv.gz")
 FP_MULTIOME_TRAIN_weightPCA = os.path.join(DATA_DIR,"weightPCA.csv.gz")
+FP_MULTIOME_INPUTS_PROJECTION = os.path.join(DATA_DIR,"test/inputs_projection.csv.gz")
 
 BATCH_SIZE = 256
 # BATCH_SIZE = 1024
@@ -108,17 +110,21 @@ def main():
     train_multi = SingleCellDataset(FP_MULTIOME_TRAIN_INPUTS,None, FP_MULTIOME_TRAIN_TARGETS_k_centers)
     trainloader_multi = DataLoader(train_multi, batch_size=BATCH_SIZE)
 
+
     #if (NAME OF CONCAT FILE IS PRESENT):
     #    read that file
     #else:
-    projections = {}
-    weight = weight.to(DEVICE)
-    for batch_id, (_, features, _) in enumerate(trainloader_multi):
-        features = features.to(DEVICE)
-        projections[batch_id] = features.matmul(weight)
-
     #pkl.dumps(INPUT_PROJECTIONS)
-        # save the file
+    # save the file
+    if os.path.exists(FP_MULTIOME_INPUTS_PROJECTION):
+        pkl.load(FP_MULTIOME_INPUTS_PROJECTION)
+    else:
+        projections = {}
+        weight = weight.to(DEVICE)
+        for batch_id, (_, features, _) in enumerate(trainloader_multi):
+            features = features.to(DEVICE)
+            projections[batch_id] = features.matmul(weight)
+        pkl.dumps(projections, FP_MULTIOME_INPUTS_PROJECTION, protocol=pkl.HIGHEST_PROTOCOL)
 
     model = LinearRegression(projections, DEVICE)
     optimizer = torch.optim.SGD(model.parameters(), lr=LEARNING_RATE, weight_decay=WEIGHT_DECAY, momentum=MOMENTUM)
