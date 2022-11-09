@@ -16,10 +16,14 @@ when_to_transfer_output = ON_EXIT
 transfer_input_files = /home/zxu444/open/func/prepro.py, /home/zxu444/open/models/model_predict.py, linearTorch.py, model_epoch5.pt
 
 # IMPORTANT! Require execute servers that can access /staging
-Requirements = (Target.HasCHTCStaging == true)
+Requirements = (Target.HasCHTCStaging == true && Target.CUDAGlobalMemoryMb > 4000)
 
 request_cpus = 1
-request_memory = 100GB
-request_disk = 50GB
+request_memory = 16GB
+request_disk = 20GB
+request_gpus = 1
++GPUJobLength = "short"
++WantGPULab = true
++wantFlocking = true
 
 queue 1
