@@ -96,7 +96,6 @@ def train(model, train_loader, optimizer, epoch, start_time):
 
 
 
-
 def main():
     start_time = time.time()
     print("start reading weightPCA--")
