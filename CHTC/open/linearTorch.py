@@ -65,15 +65,15 @@ def compute_epoch_loss(model, data_loader):
 
 def train(model, train_loader, optimizer, epoch, start_time):
     model.train()
-    for batch_id, (cells, features, targets) in enumerate(train_loader):
-        features = features.to(DEVICE)
+    model = model.to(DEVICE)
+    for batch_id, (_, _, targets) in enumerate(train_loader):
         targets = targets.to(DEVICE)
 
         # zero the parameter gradients
         optimizer.zero_grad()
 
         # forward + backward
-        outputs = model(features)
+        outputs = model(batch_id)
         loss = F.mse_loss(targets,outputs)
         loss.backward()
 
@@ -84,9 +84,9 @@ def train(model, train_loader, optimizer, epoch, start_time):
         if not batch_id % 50:
                print("Epoch: {}  |  Batch: {}/{}  |  Cost: {}".format(epoch+1+START_EPOCH, batch_id, len(train_loader), loss))
                print(f"-- Time elapsed: {(time.time() - start_time)/60} min --")
-    
+
     train_loss = compute_epoch_loss(model, train_loader)
-    
+
     return train_loss
 
 
@@ -96,9 +96,10 @@ def main():
     start_time = time.time()
     print("start reading weightPCA--")
     print(f"-- Time elapsed: {(time.time() - start_time)/60} min --")
-    weightPCA = pd.read_csv(FP_MULTIOME_TRAIN_weightPCA, compression = 'gzip').values
-    weight = torch.from_numpy(weightPCA).to(torch.float32).T
-    # weight = torch.ones(228942, 1000)
+    #weightPCA = pd.read_csv(FP_MULTIOME_TRAIN_weightPCA, compression = 'gzip').values
+    #weight = torch.from_numpy(weightPCA).to(torch.float32).T
+    weight = torch.ones(228942, 1000)
+
     print("finish reading weightPCA--")
     print(f"-- Time elapsed: {(time.time() - start_time)/60} min --")
     print("weightPCA shape: ", weight.shape)
@@ -107,17 +108,20 @@ def main():
     train_multi = SingleCellDataset(FP_MULTIOME_TRAIN_INPUTS,None, FP_MULTIOME_TRAIN_TARGETS_k_centers)
     trainloader_multi = DataLoader(train_multi, batch_size=BATCH_SIZE)
 
-    model = LinearRegression(weight)
-    # print(model.LR)
+    #if (NAME OF CONCAT FILE IS PRESENT):
+    #    read that file
+    #else:
+    projections = {}
+    weight = weight.to(DEVICE)
+    for batch_id, (_, features, _) in enumerate(trainloader_multi):
+        features = features.to(DEVICE)
+        projections[batch_id] = features.matmul(weight)
 
+    #pkl.dumps(INPUT_PROJECTIONS)
+        # save the file
+
+    model = LinearRegression(projections, DEVICE)
     optimizer = torch.optim.SGD(model.parameters(), lr=LEARNING_RATE, weight_decay=WEIGHT_DECAY, momentum=MOMENTUM)
-
-
-    # cells, features, targets = next(iter(trainloader_multi))
-
-    # output = model(features)
-
-    # print(output.shape)
 
     # training loop
     train_loss_total = []
@@ -131,8 +135,7 @@ def main():
         if epoch % 1 == 0:
             print("Epoch: {}/{}  === Train Cost: {}".format(epoch + 1 + START_EPOCH, START_EPOCH + EPOCH, train_loss))
             print(f"-- Time elapsed: {(time.time() - start_time)/60} min --")
-    
-    
+
     torch.save(model.state_dict(),os.path.join("model_epoch{}.pt".format(START_EPOCH + EPOCH)))
     ##====================== record cost
     with open(f"cost_epoch{START_EPOCH + EPOCH}.txt", "w") as f:
