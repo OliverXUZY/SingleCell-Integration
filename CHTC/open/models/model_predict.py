@@ -15,15 +15,16 @@ def testfull(inputs):
 
 
 class LinearRegression(nn.Module):
-    def __init__(self, weightPCA) -> None:
+    def __init__(self, projections, DEVICE) -> None:
         super(LinearRegression, self).__init__()
 
         self.LR = nn.Linear(1000,100, bias=True)
-        self.weightPCA = weightPCA
+        self.projections = projections
+        self.DEVICE = DEVICE
 
-    def forward(self, input):
-        input = input.matmul(self.weightPCA)
-        output = self.LR(input)
+    def forward(self, batch_id):
+        x = self.projections[batch_id]
+        output = self.LR(x.to(self.DEVICE))
         return output
 
 def recover_from_cluster(raw_pred, cluster_model_labels, nz_index, n_targets):
