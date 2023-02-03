@@ -1,0 +1,61 @@
+000 (16742263.000.000) 2022-11-11 15:23:12 Job submitted from host: <128.105.244.191:9618?addrs=128.105.244.191-9618&alias=submit-1.chtc.wisc.edu&noUDP&sock=schedd_6485_bfc3>
+...
+040 (16742263.000.000) 2022-11-11 15:23:39 Started transferring input files
+	Transferring to host: <128.104.103.46:9618?addrs=128.104.103.46-9618+[2607-f388-107c-501-ae1f-6bff-feac-5e02]-9618&alias=vetsigian0000.chtc.wisc.edu&noUDP&sock=slot1_1_51741_f711_5309>
+...
+040 (16742263.000.000) 2022-11-11 15:23:39 Finished transferring input files
+...
+001 (16742263.000.000) 2022-11-11 15:23:40 Job executing on host: <128.104.103.46:9618?addrs=128.104.103.46-9618+[2607-f388-107c-501-ae1f-6bff-feac-5e02]-9618&alias=vetsigian0000.chtc.wisc.edu&noUDP&sock=startd_7807_87f7>
+...
+006 (16742263.000.000) 2022-11-11 15:23:49 Image size of job updated: 223
+	223  -  MemoryUsage of job (MB)
+	228616  -  ResidentSetSize of job (KB)
+...
+006 (16742263.000.000) 2022-11-11 15:28:50 Image size of job updated: 6919
+	6919  -  MemoryUsage of job (MB)
+	7085428  -  ResidentSetSize of job (KB)
+...
+006 (16742263.000.000) 2022-11-11 15:33:52 Image size of job updated: 13498
+	13498  -  MemoryUsage of job (MB)
+	13822896  -  ResidentSetSize of job (KB)
+...
+006 (16742263.000.000) 2022-11-11 15:38:53 Image size of job updated: 20190
+	20190  -  MemoryUsage of job (MB)
+	20675048  -  ResidentSetSize of job (KB)
+...
+006 (16742263.000.000) 2022-11-11 15:43:54 Image size of job updated: 26750
+	26750  -  MemoryUsage of job (MB)
+	27392656  -  ResidentSetSize of job (KB)
+...
+006 (16742263.000.000) 2022-11-11 15:48:55 Image size of job updated: 33274
+	33274  -  MemoryUsage of job (MB)
+	34073144  -  ResidentSetSize of job (KB)
+...
+006 (16742263.000.000) 2022-11-11 15:53:55 Image size of job updated: 35716
+	35716  -  MemoryUsage of job (MB)
+	36574176  -  ResidentSetSize of job (KB)
+...
+040 (16742263.000.000) 2022-11-11 16:04:55 Started transferring output files
+...
+040 (16742263.000.000) 2022-11-11 16:04:55 Finished transferring output files
+...
+005 (16742263.000.000) 2022-11-11 16:04:56 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:34:37, Sys 0 00:02:17  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:34:37, Sys 0 00:02:17  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	712  -  Run Bytes Sent By Job
+	418301  -  Run Bytes Received By Job
+	712  -  Total Bytes Sent By Job
+	418301  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage   Request Allocated Assigned
+	   Cpus                 :      0.00         1         1 
+	   Disk (KB)            :    473    209715200 214450094 
+	   Gpus (Average)       : 311259.74         1         1 "GPU-8e4ef0ae"
+	   GpusMemory (MB)      :   2710                        
+	   IoHeavy              :                             0 
+	   Memory (MB)          :  35716        92160     92160 
+
+	Job terminated of its own accord at 2022-11-11T22:04:54Z with exit-code 0.
+...

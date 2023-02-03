@@ -1,0 +1,203 @@
+Projection Exists
+start training--
+-- Time elapsed: 10.0s --
+Epoch: 1  |  Batch: 0/414  |  Cost: 8.968213081359863
+-- Time elapsed: 11.6s --
+Epoch: 1  |  Batch: 50/414  |  Cost: 1.9961217641830444
+-- Time elapsed: 1.0m, 25.7s --
+Epoch: 1  |  Batch: 100/414  |  Cost: 1.744710922241211
+-- Time elapsed: 2.0m, 38.2s --
+Epoch: 1  |  Batch: 150/414  |  Cost: 1.6003344058990479
+-- Time elapsed: 3.0m, 47.6s --
+Epoch: 1  |  Batch: 200/414  |  Cost: 2.040601968765259
+-- Time elapsed: 5.0m, 1.1s --
+Epoch: 1  |  Batch: 250/414  |  Cost: 1.6610769033432007
+-- Time elapsed: 6.0m, 14.0s --
+Epoch: 1  |  Batch: 300/414  |  Cost: 2.1908795833587646
+-- Time elapsed: 7.0m, 24.9s --
+Epoch: 1  |  Batch: 350/414  |  Cost: 1.7824136018753052
+-- Time elapsed: 8.0m, 38.2s --
+Epoch: 1  |  Batch: 400/414  |  Cost: 1.7052630186080933
+-- Time elapsed: 9.0m, 48.8s --
+Epoch: 1/10  === Train Cost: 217.00160217285156
+-- Time elapsed: 19.0m, 15.5s --
+Epoch: 2  |  Batch: 0/414  |  Cost: 1.939039707183838
+-- Time elapsed: 19.0m, 16.9s --
+Epoch: 2  |  Batch: 50/414  |  Cost: 1.9105584621429443
+-- Time elapsed: 20.0m, 27.6s --
+Epoch: 2  |  Batch: 100/414  |  Cost: 1.6892304420471191
+-- Time elapsed: 21.0m, 38.4s --
+Epoch: 2  |  Batch: 150/414  |  Cost: 1.5779949426651
+-- Time elapsed: 22.0m, 47.1s --
+Epoch: 2  |  Batch: 200/414  |  Cost: 2.0024771690368652
+-- Time elapsed: 23.0m, 59.9s --
+Epoch: 2  |  Batch: 250/414  |  Cost: 1.609930396080017
+-- Time elapsed: 25.0m, 9.8s --
+Epoch: 2  |  Batch: 300/414  |  Cost: 2.166933059692383
+-- Time elapsed: 26.0m, 17.1s --
+Epoch: 2  |  Batch: 350/414  |  Cost: 1.7558397054672241
+-- Time elapsed: 27.0m, 28.5s --
+Epoch: 2  |  Batch: 400/414  |  Cost: 1.6665929555892944
+-- Time elapsed: 28.0m, 39.5s --
+Epoch: 2/10  === Train Cost: 212.95095825195312
+-- Time elapsed: 39.0m, 1.7s --
+Epoch: 3  |  Batch: 0/414  |  Cost: 1.9062104225158691
+-- Time elapsed: 39.0m, 3.0s --
+Epoch: 3  |  Batch: 50/414  |  Cost: 1.886332631111145
+-- Time elapsed: 40.0m, 11.5s --
+Epoch: 3  |  Batch: 100/414  |  Cost: 1.6736379861831665
+-- Time elapsed: 41.0m, 23.2s --
+Epoch: 3  |  Batch: 150/414  |  Cost: 1.5662314891815186
+-- Time elapsed: 42.0m, 35.3s --
+Epoch: 3  |  Batch: 200/414  |  Cost: 1.9797598123550415
+-- Time elapsed: 43.0m, 48.9s --
+Epoch: 3  |  Batch: 250/414  |  Cost: 1.5870764255523682
+-- Time elapsed: 45.0m, 0.1s --
+Epoch: 3  |  Batch: 300/414  |  Cost: 2.1479358673095703
+-- Time elapsed: 46.0m, 11.3s --
+Epoch: 3  |  Batch: 350/414  |  Cost: 1.7389390468597412
+-- Time elapsed: 47.0m, 23.9s --
+Epoch: 3  |  Batch: 400/414  |  Cost: 1.6439166069030762
+-- Time elapsed: 48.0m, 33.5s --
+Epoch: 3/10  === Train Cost: 210.19667053222656
+-- Time elapsed: 58.0m, 40.5s --
+Epoch: 4  |  Batch: 0/414  |  Cost: 1.8897188901901245
+-- Time elapsed: 58.0m, 42.0s --
+Epoch: 4  |  Batch: 50/414  |  Cost: 1.8675751686096191
+-- Time elapsed: 59.0m, 53.2s --
+Epoch: 4  |  Batch: 100/414  |  Cost: 1.6622083187103271
+-- Time elapsed: 1.0h, 1.0min --
+Epoch: 4  |  Batch: 150/414  |  Cost: 1.5564295053482056
+-- Time elapsed: 1.0h, 2.1min --
+Epoch: 4  |  Batch: 200/414  |  Cost: 1.9614759683609009
+-- Time elapsed: 1.0h, 3.2min --
+Epoch: 4  |  Batch: 250/414  |  Cost: 1.5713595151901245
+-- Time elapsed: 1.0h, 4.3min --
+Epoch: 4  |  Batch: 300/414  |  Cost: 2.1309056282043457
+-- Time elapsed: 1.0h, 5.5min --
+Epoch: 4  |  Batch: 350/414  |  Cost: 1.7252297401428223
+-- Time elapsed: 1.0h, 6.7min --
+Epoch: 4  |  Batch: 400/414  |  Cost: 1.6275157928466797
+-- Time elapsed: 1.0h, 7.8min --
+Epoch: 4/10  === Train Cost: 207.9463348388672
+-- Time elapsed: 1.0h, 17.2min --
+Epoch: 5  |  Batch: 0/414  |  Cost: 1.8778637647628784
+-- Time elapsed: 1.0h, 17.2min --
+Epoch: 5  |  Batch: 50/414  |  Cost: 1.8515419960021973
+-- Time elapsed: 1.0h, 18.3min --
+Epoch: 5  |  Batch: 100/414  |  Cost: 1.6526925563812256
+-- Time elapsed: 1.0h, 19.4min --
+Epoch: 5  |  Batch: 150/414  |  Cost: 1.5477430820465088
+-- Time elapsed: 1.0h, 20.6min --
+Epoch: 5  |  Batch: 200/414  |  Cost: 1.9457218647003174
+-- Time elapsed: 1.0h, 21.7min --
+Epoch: 5  |  Batch: 250/414  |  Cost: 1.5592963695526123
+-- Time elapsed: 1.0h, 22.8min --
+Epoch: 5  |  Batch: 300/414  |  Cost: 2.1152830123901367
+-- Time elapsed: 1.0h, 24.0min --
+Epoch: 5  |  Batch: 350/414  |  Cost: 1.7133855819702148
+-- Time elapsed: 1.0h, 25.2min --
+Epoch: 5  |  Batch: 400/414  |  Cost: 1.6146458387374878
+-- Time elapsed: 1.0h, 26.3min --
+Epoch: 5/10  === Train Cost: 205.99188232421875
+-- Time elapsed: 1.0h, 35.3min --
+Epoch: 6  |  Batch: 0/414  |  Cost: 1.8680169582366943
+-- Time elapsed: 1.0h, 35.3min --
+Epoch: 6  |  Batch: 50/414  |  Cost: 1.8373197317123413
+-- Time elapsed: 1.0h, 36.4min --
+Epoch: 6  |  Batch: 100/414  |  Cost: 1.6443618535995483
+-- Time elapsed: 1.0h, 37.6min --
+Epoch: 6  |  Batch: 150/414  |  Cost: 1.5398714542388916
+-- Time elapsed: 1.0h, 38.7min --
+Epoch: 6  |  Batch: 200/414  |  Cost: 1.9316991567611694
+-- Time elapsed: 1.0h, 39.9min --
+Epoch: 6  |  Batch: 250/414  |  Cost: 1.5494134426116943
+-- Time elapsed: 1.0h, 41.1min --
+Epoch: 6  |  Batch: 300/414  |  Cost: 2.1008048057556152
+-- Time elapsed: 1.0h, 42.2min --
+Epoch: 6  |  Batch: 350/414  |  Cost: 1.7028427124023438
+-- Time elapsed: 1.0h, 43.5min --
+Epoch: 6  |  Batch: 400/414  |  Cost: 1.603999137878418
+-- Time elapsed: 1.0h, 44.6min --
+Epoch: 6/10  === Train Cost: 204.2495574951172
+-- Time elapsed: 1.0h, 54.7min --
+Epoch: 7  |  Batch: 0/414  |  Cost: 1.8593838214874268
+-- Time elapsed: 1.0h, 54.8min --
+Epoch: 7  |  Batch: 50/414  |  Cost: 1.824459195137024
+-- Time elapsed: 1.0h, 56.0min --
+Epoch: 7  |  Batch: 100/414  |  Cost: 1.6368801593780518
+-- Time elapsed: 1.0h, 57.1min --
+Epoch: 7  |  Batch: 150/414  |  Cost: 1.5326629877090454
+-- Time elapsed: 1.0h, 58.3min --
+Epoch: 7  |  Batch: 200/414  |  Cost: 1.9189884662628174
+-- Time elapsed: 1.0h, 59.4min --
+Epoch: 7  |  Batch: 250/414  |  Cost: 1.5409667491912842
+-- Time elapsed: 2.0h, 0.6min --
+Epoch: 7  |  Batch: 300/414  |  Cost: 2.087310791015625
+-- Time elapsed: 2.0h, 1.6min --
+Epoch: 7  |  Batch: 350/414  |  Cost: 1.6932989358901978
+-- Time elapsed: 2.0h, 2.8min --
+Epoch: 7  |  Batch: 400/414  |  Cost: 1.5948786735534668
+-- Time elapsed: 2.0h, 3.8min --
+Epoch: 7/10  === Train Cost: 202.6741180419922
+-- Time elapsed: 2.0h, 13.1min --
+Epoch: 8  |  Batch: 0/414  |  Cost: 1.8516340255737305
+-- Time elapsed: 2.0h, 13.1min --
+Epoch: 8  |  Batch: 50/414  |  Cost: 1.8126991987228394
+-- Time elapsed: 2.0h, 14.2min --
+Epoch: 8  |  Batch: 100/414  |  Cost: 1.6300643682479858
+-- Time elapsed: 2.0h, 15.2min --
+Epoch: 8  |  Batch: 150/414  |  Cost: 1.5260227918624878
+-- Time elapsed: 2.0h, 16.2min --
+Epoch: 8  |  Batch: 200/414  |  Cost: 1.9073355197906494
+-- Time elapsed: 2.0h, 17.3min --
+Epoch: 8  |  Batch: 250/414  |  Cost: 1.5335485935211182
+-- Time elapsed: 2.0h, 18.3min --
+Epoch: 8  |  Batch: 300/414  |  Cost: 2.0746867656707764
+-- Time elapsed: 2.0h, 19.3min --
+Epoch: 8  |  Batch: 350/414  |  Cost: 1.6845684051513672
+-- Time elapsed: 2.0h, 20.3min --
+Epoch: 8  |  Batch: 400/414  |  Cost: 1.5868810415267944
+-- Time elapsed: 2.0h, 21.4min --
+Epoch: 8/10  === Train Cost: 201.23780822753906
+-- Time elapsed: 2.0h, 30.6min --
+Epoch: 9  |  Batch: 0/414  |  Cost: 1.8445873260498047
+-- Time elapsed: 2.0h, 30.6min --
+Epoch: 9  |  Batch: 50/414  |  Cost: 1.801867127418518
+-- Time elapsed: 2.0h, 31.6min --
+Epoch: 9  |  Batch: 100/414  |  Cost: 1.623800277709961
+-- Time elapsed: 2.0h, 32.7min --
+Epoch: 9  |  Batch: 150/414  |  Cost: 1.5198816061019897
+-- Time elapsed: 2.0h, 33.7min --
+Epoch: 9  |  Batch: 200/414  |  Cost: 1.8965697288513184
+-- Time elapsed: 2.0h, 34.7min --
+Epoch: 9  |  Batch: 250/414  |  Cost: 1.5269156694412231
+-- Time elapsed: 2.0h, 35.9min --
+Epoch: 9  |  Batch: 300/414  |  Cost: 2.0628421306610107
+-- Time elapsed: 2.0h, 36.9min --
+Epoch: 9  |  Batch: 350/414  |  Cost: 1.676522970199585
+-- Time elapsed: 2.0h, 38.1min --
+Epoch: 9  |  Batch: 400/414  |  Cost: 1.5797547101974487
+-- Time elapsed: 2.0h, 39.2min --
+Epoch: 9/10  === Train Cost: 199.9204864501953
+-- Time elapsed: 2.0h, 49.2min --
+Epoch: 10  |  Batch: 0/414  |  Cost: 1.8381277322769165
+-- Time elapsed: 2.0h, 49.3min --
+Epoch: 10  |  Batch: 50/414  |  Cost: 1.7918380498886108
+-- Time elapsed: 2.0h, 50.6min --
+Epoch: 10  |  Batch: 100/414  |  Cost: 1.6180083751678467
+-- Time elapsed: 2.0h, 51.9min --
+Epoch: 10  |  Batch: 150/414  |  Cost: 1.5141847133636475
+-- Time elapsed: 2.0h, 53.2min --
+Epoch: 10  |  Batch: 200/414  |  Cost: 1.8865665197372437
+-- Time elapsed: 2.0h, 54.6min --
+Epoch: 10  |  Batch: 250/414  |  Cost: 1.520912766456604
+-- Time elapsed: 2.0h, 55.9min --
+Epoch: 10  |  Batch: 300/414  |  Cost: 2.0516998767852783
+-- Time elapsed: 2.0h, 57.4min --
+Epoch: 10  |  Batch: 350/414  |  Cost: 1.6690679788589478
+-- Time elapsed: 2.0h, 58.9min --
+Epoch: 10  |  Batch: 400/414  |  Cost: 1.573331594467163
+-- Time elapsed: 3.0h, 0.4min --
+Epoch: 10/10  === Train Cost: 198.70761108398438
+-- Time elapsed: 3.0h, 12.5min --

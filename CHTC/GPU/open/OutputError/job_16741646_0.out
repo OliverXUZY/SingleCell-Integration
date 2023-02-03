@@ -1,0 +1,18 @@
+start reading weightPCA--
+-- Time elapsed: 2.463658650716146e-07 min --
+finish reading weightPCA--
+-- Time elapsed: 0.010746387640635173 min --
+weightPCA shape:  torch.Size([228942, 1000])
+Projection Exists
+start training--
+-- Time elapsed: 0.07617036104202271 min --
+Epoch: 1  |  Batch: 0/414  |  Cost: 54100588.0
+-- Time elapsed: 0.1645131508509318 min --
+Epoch: 1  |  Batch: 1/414  |  Cost: 1.34564032799122e+22
+-- Time elapsed: 0.18519593477249147 min --
+Epoch: 1  |  Batch: 2/414  |  Cost: inf
+-- Time elapsed: 0.20506846110026042 min --
+Epoch: 1  |  Batch: 3/414  |  Cost: inf
+-- Time elapsed: 0.22664301792780558 min --
+Epoch: 1  |  Batch: 4/414  |  Cost: inf
+-- Time elapsed: 0.2530565579732259 min --

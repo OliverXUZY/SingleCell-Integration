@@ -1,0 +1,19 @@
+000 (16742237.000.000) 2022-11-11 12:02:58 Job submitted from host: <128.105.244.191:9618?addrs=128.105.244.191-9618&alias=submit-1.chtc.wisc.edu&noUDP&sock=schedd_6485_bfc3>
+...
+040 (16742237.000.000) 2022-11-11 12:03:17 Started transferring input files
+	Transferring to host: <128.104.103.46:9618?addrs=128.104.103.46-9618+[2607-f388-107c-501-ae1f-6bff-feac-5e02]-9618&alias=vetsigian0000.chtc.wisc.edu&noUDP&sock=slot1_1_51741_f711_4947>
+...
+040 (16742237.000.000) 2022-11-11 12:03:17 Finished transferring input files
+...
+007 (16742237.000.000) 2022-11-11 12:03:17 Shadow exception!
+	Error from slot1_1@vetsigian0000.chtc.wisc.edu: SHADOW at 128.105.244.191 failed to send file(s) to <128.104.103.46:38954>: |Error: reading from file /home/zxu444/open_problem/GPU/open/models/utils.py: (errno 2) No such file or directory; STARTER failed to receive file(s) from <128.105.244.191:9618>
+	0  -  Run Bytes Sent By Job
+	416816  -  Run Bytes Received By Job
+...
+012 (16742237.000.000) 2022-11-11 12:03:17 Job was held.
+	Transfer input files failure at access point submit-1 while sending files to execution point slot1_1@vetsigian0000.chtc.wisc.edu. Details: reading from file /home/zxu444/open_problem/GPU/open/models/utils.py: (errno 2) No such file or directory
+	Code 13 Subcode 2
+...
+009 (16742237.000.000) 2022-11-11 12:05:26 Job was aborted.
+	via condor_rm (by user zxu444)
+...

@@ -1,0 +1,836 @@
+start reading weightPCA--
+-- Time elapsed: 0.0s --
+finish reading weightPCA--
+-- Time elapsed: 0.7s --
+weightPCA shape:  torch.Size([228942, 1000])
+Projection Exists
+start training--
+-- Time elapsed: 8.1s --
+Epoch: 1  |  Batch: 0/414  |  Cost: 64948288.0
+-- Time elapsed: 9.8s --
+Epoch: 1  |  Batch: 1/414  |  Cost: 1.6154548097266697e+22
+-- Time elapsed: 11.2s --
+Epoch: 1  |  Batch: 2/414  |  Cost: inf
+-- Time elapsed: 12.4s --
+Epoch: 1  |  Batch: 3/414  |  Cost: inf
+-- Time elapsed: 13.8s --
+Epoch: 1  |  Batch: 4/414  |  Cost: inf
+-- Time elapsed: 15.2s --
+Epoch: 1  |  Batch: 5/414  |  Cost: inf
+-- Time elapsed: 16.5s --
+Epoch: 1  |  Batch: 6/414  |  Cost: inf
+-- Time elapsed: 17.8s --
+Epoch: 1  |  Batch: 7/414  |  Cost: nan
+-- Time elapsed: 19.1s --
+Epoch: 1  |  Batch: 8/414  |  Cost: nan
+-- Time elapsed: 20.4s --
+Epoch: 1  |  Batch: 9/414  |  Cost: nan
+-- Time elapsed: 21.7s --
+Epoch: 1  |  Batch: 10/414  |  Cost: nan
+-- Time elapsed: 23.1s --
+Epoch: 1  |  Batch: 11/414  |  Cost: nan
+-- Time elapsed: 24.4s --
+Epoch: 1  |  Batch: 12/414  |  Cost: nan
+-- Time elapsed: 25.7s --
+Epoch: 1  |  Batch: 13/414  |  Cost: nan
+-- Time elapsed: 27.1s --
+Epoch: 1  |  Batch: 14/414  |  Cost: nan
+-- Time elapsed: 28.4s --
+Epoch: 1  |  Batch: 15/414  |  Cost: nan
+-- Time elapsed: 29.8s --
+Epoch: 1  |  Batch: 16/414  |  Cost: nan
+-- Time elapsed: 31.1s --
+Epoch: 1  |  Batch: 17/414  |  Cost: nan
+-- Time elapsed: 32.5s --
+Epoch: 1  |  Batch: 18/414  |  Cost: nan
+-- Time elapsed: 33.8s --
+Epoch: 1  |  Batch: 19/414  |  Cost: nan
+-- Time elapsed: 35.1s --
+Epoch: 1  |  Batch: 20/414  |  Cost: nan
+-- Time elapsed: 36.4s --
+Epoch: 1  |  Batch: 21/414  |  Cost: nan
+-- Time elapsed: 37.7s --
+Epoch: 1  |  Batch: 22/414  |  Cost: nan
+-- Time elapsed: 38.9s --
+Epoch: 1  |  Batch: 23/414  |  Cost: nan
+-- Time elapsed: 40.2s --
+Epoch: 1  |  Batch: 24/414  |  Cost: nan
+-- Time elapsed: 41.5s --
+Epoch: 1  |  Batch: 25/414  |  Cost: nan
+-- Time elapsed: 42.8s --
+Epoch: 1  |  Batch: 26/414  |  Cost: nan
+-- Time elapsed: 44.1s --
+Epoch: 1  |  Batch: 27/414  |  Cost: nan
+-- Time elapsed: 45.4s --
+Epoch: 1  |  Batch: 28/414  |  Cost: nan
+-- Time elapsed: 46.9s --
+Epoch: 1  |  Batch: 29/414  |  Cost: nan
+-- Time elapsed: 48.3s --
+Epoch: 1  |  Batch: 30/414  |  Cost: nan
+-- Time elapsed: 49.7s --
+Epoch: 1  |  Batch: 31/414  |  Cost: nan
+-- Time elapsed: 51.2s --
+Epoch: 1  |  Batch: 32/414  |  Cost: nan
+-- Time elapsed: 52.5s --
+Epoch: 1  |  Batch: 33/414  |  Cost: nan
+-- Time elapsed: 53.9s --
+Epoch: 1  |  Batch: 34/414  |  Cost: nan
+-- Time elapsed: 55.3s --
+Epoch: 1  |  Batch: 35/414  |  Cost: nan
+-- Time elapsed: 56.6s --
+Epoch: 1  |  Batch: 36/414  |  Cost: nan
+-- Time elapsed: 58.0s --
+Epoch: 1  |  Batch: 37/414  |  Cost: nan
+-- Time elapsed: 59.2s --
+Epoch: 1  |  Batch: 38/414  |  Cost: nan
+-- Time elapsed: 1.0m --
+Epoch: 1  |  Batch: 39/414  |  Cost: nan
+-- Time elapsed: 1.0m --
+Epoch: 1  |  Batch: 40/414  |  Cost: nan
+-- Time elapsed: 1.1m --
+Epoch: 1  |  Batch: 41/414  |  Cost: nan
+-- Time elapsed: 1.1m --
+Epoch: 1  |  Batch: 42/414  |  Cost: nan
+-- Time elapsed: 1.1m --
+Epoch: 1  |  Batch: 43/414  |  Cost: nan
+-- Time elapsed: 1.1m --
+Epoch: 1  |  Batch: 44/414  |  Cost: nan
+-- Time elapsed: 1.1m --
+Epoch: 1  |  Batch: 45/414  |  Cost: nan
+-- Time elapsed: 1.2m --
+Epoch: 1  |  Batch: 46/414  |  Cost: nan
+-- Time elapsed: 1.2m --
+Epoch: 1  |  Batch: 47/414  |  Cost: nan
+-- Time elapsed: 1.2m --
+Epoch: 1  |  Batch: 48/414  |  Cost: nan
+-- Time elapsed: 1.2m --
+Epoch: 1  |  Batch: 49/414  |  Cost: nan
+-- Time elapsed: 1.3m --
+Epoch: 1  |  Batch: 50/414  |  Cost: nan
+-- Time elapsed: 1.3m --
+Epoch: 1  |  Batch: 51/414  |  Cost: nan
+-- Time elapsed: 1.3m --
+Epoch: 1  |  Batch: 52/414  |  Cost: nan
+-- Time elapsed: 1.3m --
+Epoch: 1  |  Batch: 53/414  |  Cost: nan
+-- Time elapsed: 1.3m --
+Epoch: 1  |  Batch: 54/414  |  Cost: nan
+-- Time elapsed: 1.4m --
+Epoch: 1  |  Batch: 55/414  |  Cost: nan
+-- Time elapsed: 1.4m --
+Epoch: 1  |  Batch: 56/414  |  Cost: nan
+-- Time elapsed: 1.4m --
+Epoch: 1  |  Batch: 57/414  |  Cost: nan
+-- Time elapsed: 1.4m --
+Epoch: 1  |  Batch: 58/414  |  Cost: nan
+-- Time elapsed: 1.5m --
+Epoch: 1  |  Batch: 59/414  |  Cost: nan
+-- Time elapsed: 1.5m --
+Epoch: 1  |  Batch: 60/414  |  Cost: nan
+-- Time elapsed: 1.5m --
+Epoch: 1  |  Batch: 61/414  |  Cost: nan
+-- Time elapsed: 1.5m --
+Epoch: 1  |  Batch: 62/414  |  Cost: nan
+-- Time elapsed: 1.6m --
+Epoch: 1  |  Batch: 63/414  |  Cost: nan
+-- Time elapsed: 1.6m --
+Epoch: 1  |  Batch: 64/414  |  Cost: nan
+-- Time elapsed: 1.6m --
+Epoch: 1  |  Batch: 65/414  |  Cost: nan
+-- Time elapsed: 1.6m --
+Epoch: 1  |  Batch: 66/414  |  Cost: nan
+-- Time elapsed: 1.6m --
+Epoch: 1  |  Batch: 67/414  |  Cost: nan
+-- Time elapsed: 1.7m --
+Epoch: 1  |  Batch: 68/414  |  Cost: nan
+-- Time elapsed: 1.7m --
+Epoch: 1  |  Batch: 69/414  |  Cost: nan
+-- Time elapsed: 1.7m --
+Epoch: 1  |  Batch: 70/414  |  Cost: nan
+-- Time elapsed: 1.7m --
+Epoch: 1  |  Batch: 71/414  |  Cost: nan
+-- Time elapsed: 1.7m --
+Epoch: 1  |  Batch: 72/414  |  Cost: nan
+-- Time elapsed: 1.8m --
+Epoch: 1  |  Batch: 73/414  |  Cost: nan
+-- Time elapsed: 1.8m --
+Epoch: 1  |  Batch: 74/414  |  Cost: nan
+-- Time elapsed: 1.8m --
+Epoch: 1  |  Batch: 75/414  |  Cost: nan
+-- Time elapsed: 1.8m --
+Epoch: 1  |  Batch: 76/414  |  Cost: nan
+-- Time elapsed: 1.9m --
+Epoch: 1  |  Batch: 77/414  |  Cost: nan
+-- Time elapsed: 1.9m --
+Epoch: 1  |  Batch: 78/414  |  Cost: nan
+-- Time elapsed: 1.9m --
+Epoch: 1  |  Batch: 79/414  |  Cost: nan
+-- Time elapsed: 1.9m --
+Epoch: 1  |  Batch: 80/414  |  Cost: nan
+-- Time elapsed: 1.9m --
+Epoch: 1  |  Batch: 81/414  |  Cost: nan
+-- Time elapsed: 2.0m --
+Epoch: 1  |  Batch: 82/414  |  Cost: nan
+-- Time elapsed: 2.0m --
+Epoch: 1  |  Batch: 83/414  |  Cost: nan
+-- Time elapsed: 2.0m --
+Epoch: 1  |  Batch: 84/414  |  Cost: nan
+-- Time elapsed: 2.0m --
+Epoch: 1  |  Batch: 85/414  |  Cost: nan
+-- Time elapsed: 2.1m --
+Epoch: 1  |  Batch: 86/414  |  Cost: nan
+-- Time elapsed: 2.1m --
+Epoch: 1  |  Batch: 87/414  |  Cost: nan
+-- Time elapsed: 2.1m --
+Epoch: 1  |  Batch: 88/414  |  Cost: nan
+-- Time elapsed: 2.1m --
+Epoch: 1  |  Batch: 89/414  |  Cost: nan
+-- Time elapsed: 2.1m --
+Epoch: 1  |  Batch: 90/414  |  Cost: nan
+-- Time elapsed: 2.2m --
+Epoch: 1  |  Batch: 91/414  |  Cost: nan
+-- Time elapsed: 2.2m --
+Epoch: 1  |  Batch: 92/414  |  Cost: nan
+-- Time elapsed: 2.2m --
+Epoch: 1  |  Batch: 93/414  |  Cost: nan
+-- Time elapsed: 2.2m --
+Epoch: 1  |  Batch: 94/414  |  Cost: nan
+-- Time elapsed: 2.2m --
+Epoch: 1  |  Batch: 95/414  |  Cost: nan
+-- Time elapsed: 2.3m --
+Epoch: 1  |  Batch: 96/414  |  Cost: nan
+-- Time elapsed: 2.3m --
+Epoch: 1  |  Batch: 97/414  |  Cost: nan
+-- Time elapsed: 2.3m --
+Epoch: 1  |  Batch: 98/414  |  Cost: nan
+-- Time elapsed: 2.3m --
+Epoch: 1  |  Batch: 99/414  |  Cost: nan
+-- Time elapsed: 2.3m --
+Epoch: 1  |  Batch: 100/414  |  Cost: nan
+-- Time elapsed: 2.4m --
+Epoch: 1  |  Batch: 101/414  |  Cost: nan
+-- Time elapsed: 2.4m --
+Epoch: 1  |  Batch: 102/414  |  Cost: nan
+-- Time elapsed: 2.4m --
+Epoch: 1  |  Batch: 103/414  |  Cost: nan
+-- Time elapsed: 2.4m --
+Epoch: 1  |  Batch: 104/414  |  Cost: nan
+-- Time elapsed: 2.5m --
+Epoch: 1  |  Batch: 105/414  |  Cost: nan
+-- Time elapsed: 2.5m --
+Epoch: 1  |  Batch: 106/414  |  Cost: nan
+-- Time elapsed: 2.5m --
+Epoch: 1  |  Batch: 107/414  |  Cost: nan
+-- Time elapsed: 2.5m --
+Epoch: 1  |  Batch: 108/414  |  Cost: nan
+-- Time elapsed: 2.5m --
+Epoch: 1  |  Batch: 109/414  |  Cost: nan
+-- Time elapsed: 2.6m --
+Epoch: 1  |  Batch: 110/414  |  Cost: nan
+-- Time elapsed: 2.6m --
+Epoch: 1  |  Batch: 111/414  |  Cost: nan
+-- Time elapsed: 2.6m --
+Epoch: 1  |  Batch: 112/414  |  Cost: nan
+-- Time elapsed: 2.6m --
+Epoch: 1  |  Batch: 113/414  |  Cost: nan
+-- Time elapsed: 2.7m --
+Epoch: 1  |  Batch: 114/414  |  Cost: nan
+-- Time elapsed: 2.7m --
+Epoch: 1  |  Batch: 115/414  |  Cost: nan
+-- Time elapsed: 2.7m --
+Epoch: 1  |  Batch: 116/414  |  Cost: nan
+-- Time elapsed: 2.7m --
+Epoch: 1  |  Batch: 117/414  |  Cost: nan
+-- Time elapsed: 2.7m --
+Epoch: 1  |  Batch: 118/414  |  Cost: nan
+-- Time elapsed: 2.8m --
+Epoch: 1  |  Batch: 119/414  |  Cost: nan
+-- Time elapsed: 2.8m --
+Epoch: 1  |  Batch: 120/414  |  Cost: nan
+-- Time elapsed: 2.8m --
+Epoch: 1  |  Batch: 121/414  |  Cost: nan
+-- Time elapsed: 2.8m --
+Epoch: 1  |  Batch: 122/414  |  Cost: nan
+-- Time elapsed: 2.9m --
+Epoch: 1  |  Batch: 123/414  |  Cost: nan
+-- Time elapsed: 2.9m --
+Epoch: 1  |  Batch: 124/414  |  Cost: nan
+-- Time elapsed: 2.9m --
+Epoch: 1  |  Batch: 125/414  |  Cost: nan
+-- Time elapsed: 2.9m --
+Epoch: 1  |  Batch: 126/414  |  Cost: nan
+-- Time elapsed: 2.9m --
+Epoch: 1  |  Batch: 127/414  |  Cost: nan
+-- Time elapsed: 3.0m --
+Epoch: 1  |  Batch: 128/414  |  Cost: nan
+-- Time elapsed: 3.0m --
+Epoch: 1  |  Batch: 129/414  |  Cost: nan
+-- Time elapsed: 3.0m --
+Epoch: 1  |  Batch: 130/414  |  Cost: nan
+-- Time elapsed: 3.0m --
+Epoch: 1  |  Batch: 131/414  |  Cost: nan
+-- Time elapsed: 3.1m --
+Epoch: 1  |  Batch: 132/414  |  Cost: nan
+-- Time elapsed: 3.1m --
+Epoch: 1  |  Batch: 133/414  |  Cost: nan
+-- Time elapsed: 3.1m --
+Epoch: 1  |  Batch: 134/414  |  Cost: nan
+-- Time elapsed: 3.1m --
+Epoch: 1  |  Batch: 135/414  |  Cost: nan
+-- Time elapsed: 3.1m --
+Epoch: 1  |  Batch: 136/414  |  Cost: nan
+-- Time elapsed: 3.2m --
+Epoch: 1  |  Batch: 137/414  |  Cost: nan
+-- Time elapsed: 3.2m --
+Epoch: 1  |  Batch: 138/414  |  Cost: nan
+-- Time elapsed: 3.2m --
+Epoch: 1  |  Batch: 139/414  |  Cost: nan
+-- Time elapsed: 3.2m --
+Epoch: 1  |  Batch: 140/414  |  Cost: nan
+-- Time elapsed: 3.3m --
+Epoch: 1  |  Batch: 141/414  |  Cost: nan
+-- Time elapsed: 3.3m --
+Epoch: 1  |  Batch: 142/414  |  Cost: nan
+-- Time elapsed: 3.3m --
+Epoch: 1  |  Batch: 143/414  |  Cost: nan
+-- Time elapsed: 3.3m --
+Epoch: 1  |  Batch: 144/414  |  Cost: nan
+-- Time elapsed: 3.3m --
+Epoch: 1  |  Batch: 145/414  |  Cost: nan
+-- Time elapsed: 3.4m --
+Epoch: 1  |  Batch: 146/414  |  Cost: nan
+-- Time elapsed: 3.4m --
+Epoch: 1  |  Batch: 147/414  |  Cost: nan
+-- Time elapsed: 3.4m --
+Epoch: 1  |  Batch: 148/414  |  Cost: nan
+-- Time elapsed: 3.4m --
+Epoch: 1  |  Batch: 149/414  |  Cost: nan
+-- Time elapsed: 3.5m --
+Epoch: 1  |  Batch: 150/414  |  Cost: nan
+-- Time elapsed: 3.5m --
+Epoch: 1  |  Batch: 151/414  |  Cost: nan
+-- Time elapsed: 3.5m --
+Epoch: 1  |  Batch: 152/414  |  Cost: nan
+-- Time elapsed: 3.5m --
+Epoch: 1  |  Batch: 153/414  |  Cost: nan
+-- Time elapsed: 3.5m --
+Epoch: 1  |  Batch: 154/414  |  Cost: nan
+-- Time elapsed: 3.6m --
+Epoch: 1  |  Batch: 155/414  |  Cost: nan
+-- Time elapsed: 3.6m --
+Epoch: 1  |  Batch: 156/414  |  Cost: nan
+-- Time elapsed: 3.6m --
+Epoch: 1  |  Batch: 157/414  |  Cost: nan
+-- Time elapsed: 3.6m --
+Epoch: 1  |  Batch: 158/414  |  Cost: nan
+-- Time elapsed: 3.7m --
+Epoch: 1  |  Batch: 159/414  |  Cost: nan
+-- Time elapsed: 3.7m --
+Epoch: 1  |  Batch: 160/414  |  Cost: nan
+-- Time elapsed: 3.7m --
+Epoch: 1  |  Batch: 161/414  |  Cost: nan
+-- Time elapsed: 3.7m --
+Epoch: 1  |  Batch: 162/414  |  Cost: nan
+-- Time elapsed: 3.7m --
+Epoch: 1  |  Batch: 163/414  |  Cost: nan
+-- Time elapsed: 3.8m --
+Epoch: 1  |  Batch: 164/414  |  Cost: nan
+-- Time elapsed: 3.8m --
+Epoch: 1  |  Batch: 165/414  |  Cost: nan
+-- Time elapsed: 3.8m --
+Epoch: 1  |  Batch: 166/414  |  Cost: nan
+-- Time elapsed: 3.8m --
+Epoch: 1  |  Batch: 167/414  |  Cost: nan
+-- Time elapsed: 3.8m --
+Epoch: 1  |  Batch: 168/414  |  Cost: nan
+-- Time elapsed: 3.9m --
+Epoch: 1  |  Batch: 169/414  |  Cost: nan
+-- Time elapsed: 3.9m --
+Epoch: 1  |  Batch: 170/414  |  Cost: nan
+-- Time elapsed: 3.9m --
+Epoch: 1  |  Batch: 171/414  |  Cost: nan
+-- Time elapsed: 3.9m --
+Epoch: 1  |  Batch: 172/414  |  Cost: nan
+-- Time elapsed: 4.0m --
+Epoch: 1  |  Batch: 173/414  |  Cost: nan
+-- Time elapsed: 4.0m --
+Epoch: 1  |  Batch: 174/414  |  Cost: nan
+-- Time elapsed: 4.0m --
+Epoch: 1  |  Batch: 175/414  |  Cost: nan
+-- Time elapsed: 4.0m --
+Epoch: 1  |  Batch: 176/414  |  Cost: nan
+-- Time elapsed: 4.1m --
+Epoch: 1  |  Batch: 177/414  |  Cost: nan
+-- Time elapsed: 4.1m --
+Epoch: 1  |  Batch: 178/414  |  Cost: nan
+-- Time elapsed: 4.1m --
+Epoch: 1  |  Batch: 179/414  |  Cost: nan
+-- Time elapsed: 4.1m --
+Epoch: 1  |  Batch: 180/414  |  Cost: nan
+-- Time elapsed: 4.2m --
+Epoch: 1  |  Batch: 181/414  |  Cost: nan
+-- Time elapsed: 4.2m --
+Epoch: 1  |  Batch: 182/414  |  Cost: nan
+-- Time elapsed: 4.2m --
+Epoch: 1  |  Batch: 183/414  |  Cost: nan
+-- Time elapsed: 4.2m --
+Epoch: 1  |  Batch: 184/414  |  Cost: nan
+-- Time elapsed: 4.2m --
+Epoch: 1  |  Batch: 185/414  |  Cost: nan
+-- Time elapsed: 4.3m --
+Epoch: 1  |  Batch: 186/414  |  Cost: nan
+-- Time elapsed: 4.3m --
+Epoch: 1  |  Batch: 187/414  |  Cost: nan
+-- Time elapsed: 4.3m --
+Epoch: 1  |  Batch: 188/414  |  Cost: nan
+-- Time elapsed: 4.3m --
+Epoch: 1  |  Batch: 189/414  |  Cost: nan
+-- Time elapsed: 4.4m --
+Epoch: 1  |  Batch: 190/414  |  Cost: nan
+-- Time elapsed: 4.4m --
+Epoch: 1  |  Batch: 191/414  |  Cost: nan
+-- Time elapsed: 4.4m --
+Epoch: 1  |  Batch: 192/414  |  Cost: nan
+-- Time elapsed: 4.4m --
+Epoch: 1  |  Batch: 193/414  |  Cost: nan
+-- Time elapsed: 4.5m --
+Epoch: 1  |  Batch: 194/414  |  Cost: nan
+-- Time elapsed: 4.5m --
+Epoch: 1  |  Batch: 195/414  |  Cost: nan
+-- Time elapsed: 4.5m --
+Epoch: 1  |  Batch: 196/414  |  Cost: nan
+-- Time elapsed: 4.5m --
+Epoch: 1  |  Batch: 197/414  |  Cost: nan
+-- Time elapsed: 4.5m --
+Epoch: 1  |  Batch: 198/414  |  Cost: nan
+-- Time elapsed: 4.6m --
+Epoch: 1  |  Batch: 199/414  |  Cost: nan
+-- Time elapsed: 4.6m --
+Epoch: 1  |  Batch: 200/414  |  Cost: nan
+-- Time elapsed: 4.6m --
+Epoch: 1  |  Batch: 201/414  |  Cost: nan
+-- Time elapsed: 4.6m --
+Epoch: 1  |  Batch: 202/414  |  Cost: nan
+-- Time elapsed: 4.7m --
+Epoch: 1  |  Batch: 203/414  |  Cost: nan
+-- Time elapsed: 4.7m --
+Epoch: 1  |  Batch: 204/414  |  Cost: nan
+-- Time elapsed: 4.7m --
+Epoch: 1  |  Batch: 205/414  |  Cost: nan
+-- Time elapsed: 4.7m --
+Epoch: 1  |  Batch: 206/414  |  Cost: nan
+-- Time elapsed: 4.8m --
+Epoch: 1  |  Batch: 207/414  |  Cost: nan
+-- Time elapsed: 4.8m --
+Epoch: 1  |  Batch: 208/414  |  Cost: nan
+-- Time elapsed: 4.8m --
+Epoch: 1  |  Batch: 209/414  |  Cost: nan
+-- Time elapsed: 4.8m --
+Epoch: 1  |  Batch: 210/414  |  Cost: nan
+-- Time elapsed: 4.8m --
+Epoch: 1  |  Batch: 211/414  |  Cost: nan
+-- Time elapsed: 4.9m --
+Epoch: 1  |  Batch: 212/414  |  Cost: nan
+-- Time elapsed: 4.9m --
+Epoch: 1  |  Batch: 213/414  |  Cost: nan
+-- Time elapsed: 4.9m --
+Epoch: 1  |  Batch: 214/414  |  Cost: nan
+-- Time elapsed: 4.9m --
+Epoch: 1  |  Batch: 215/414  |  Cost: nan
+-- Time elapsed: 4.9m --
+Epoch: 1  |  Batch: 216/414  |  Cost: nan
+-- Time elapsed: 5.0m --
+Epoch: 1  |  Batch: 217/414  |  Cost: nan
+-- Time elapsed: 5.0m --
+Epoch: 1  |  Batch: 218/414  |  Cost: nan
+-- Time elapsed: 5.0m --
+Epoch: 1  |  Batch: 219/414  |  Cost: nan
+-- Time elapsed: 5.0m --
+Epoch: 1  |  Batch: 220/414  |  Cost: nan
+-- Time elapsed: 5.1m --
+Epoch: 1  |  Batch: 221/414  |  Cost: nan
+-- Time elapsed: 5.1m --
+Epoch: 1  |  Batch: 222/414  |  Cost: nan
+-- Time elapsed: 5.1m --
+Epoch: 1  |  Batch: 223/414  |  Cost: nan
+-- Time elapsed: 5.1m --
+Epoch: 1  |  Batch: 224/414  |  Cost: nan
+-- Time elapsed: 5.1m --
+Epoch: 1  |  Batch: 225/414  |  Cost: nan
+-- Time elapsed: 5.2m --
+Epoch: 1  |  Batch: 226/414  |  Cost: nan
+-- Time elapsed: 5.2m --
+Epoch: 1  |  Batch: 227/414  |  Cost: nan
+-- Time elapsed: 5.2m --
+Epoch: 1  |  Batch: 228/414  |  Cost: nan
+-- Time elapsed: 5.2m --
+Epoch: 1  |  Batch: 229/414  |  Cost: nan
+-- Time elapsed: 5.3m --
+Epoch: 1  |  Batch: 230/414  |  Cost: nan
+-- Time elapsed: 5.3m --
+Epoch: 1  |  Batch: 231/414  |  Cost: nan
+-- Time elapsed: 5.3m --
+Epoch: 1  |  Batch: 232/414  |  Cost: nan
+-- Time elapsed: 5.3m --
+Epoch: 1  |  Batch: 233/414  |  Cost: nan
+-- Time elapsed: 5.3m --
+Epoch: 1  |  Batch: 234/414  |  Cost: nan
+-- Time elapsed: 5.4m --
+Epoch: 1  |  Batch: 235/414  |  Cost: nan
+-- Time elapsed: 5.4m --
+Epoch: 1  |  Batch: 236/414  |  Cost: nan
+-- Time elapsed: 5.4m --
+Epoch: 1  |  Batch: 237/414  |  Cost: nan
+-- Time elapsed: 5.4m --
+Epoch: 1  |  Batch: 238/414  |  Cost: nan
+-- Time elapsed: 5.4m --
+Epoch: 1  |  Batch: 239/414  |  Cost: nan
+-- Time elapsed: 5.5m --
+Epoch: 1  |  Batch: 240/414  |  Cost: nan
+-- Time elapsed: 5.5m --
+Epoch: 1  |  Batch: 241/414  |  Cost: nan
+-- Time elapsed: 5.5m --
+Epoch: 1  |  Batch: 242/414  |  Cost: nan
+-- Time elapsed: 5.5m --
+Epoch: 1  |  Batch: 243/414  |  Cost: nan
+-- Time elapsed: 5.6m --
+Epoch: 1  |  Batch: 244/414  |  Cost: nan
+-- Time elapsed: 5.6m --
+Epoch: 1  |  Batch: 245/414  |  Cost: nan
+-- Time elapsed: 5.6m --
+Epoch: 1  |  Batch: 246/414  |  Cost: nan
+-- Time elapsed: 5.6m --
+Epoch: 1  |  Batch: 247/414  |  Cost: nan
+-- Time elapsed: 5.6m --
+Epoch: 1  |  Batch: 248/414  |  Cost: nan
+-- Time elapsed: 5.7m --
+Epoch: 1  |  Batch: 249/414  |  Cost: nan
+-- Time elapsed: 5.7m --
+Epoch: 1  |  Batch: 250/414  |  Cost: nan
+-- Time elapsed: 5.7m --
+Epoch: 1  |  Batch: 251/414  |  Cost: nan
+-- Time elapsed: 5.7m --
+Epoch: 1  |  Batch: 252/414  |  Cost: nan
+-- Time elapsed: 5.8m --
+Epoch: 1  |  Batch: 253/414  |  Cost: nan
+-- Time elapsed: 5.8m --
+Epoch: 1  |  Batch: 254/414  |  Cost: nan
+-- Time elapsed: 5.8m --
+Epoch: 1  |  Batch: 255/414  |  Cost: nan
+-- Time elapsed: 5.8m --
+Epoch: 1  |  Batch: 256/414  |  Cost: nan
+-- Time elapsed: 5.8m --
+Epoch: 1  |  Batch: 257/414  |  Cost: nan
+-- Time elapsed: 5.9m --
+Epoch: 1  |  Batch: 258/414  |  Cost: nan
+-- Time elapsed: 5.9m --
+Epoch: 1  |  Batch: 259/414  |  Cost: nan
+-- Time elapsed: 5.9m --
+Epoch: 1  |  Batch: 260/414  |  Cost: nan
+-- Time elapsed: 5.9m --
+Epoch: 1  |  Batch: 261/414  |  Cost: nan
+-- Time elapsed: 6.0m --
+Epoch: 1  |  Batch: 262/414  |  Cost: nan
+-- Time elapsed: 6.0m --
+Epoch: 1  |  Batch: 263/414  |  Cost: nan
+-- Time elapsed: 6.0m --
+Epoch: 1  |  Batch: 264/414  |  Cost: nan
+-- Time elapsed: 6.0m --
+Epoch: 1  |  Batch: 265/414  |  Cost: nan
+-- Time elapsed: 6.0m --
+Epoch: 1  |  Batch: 266/414  |  Cost: nan
+-- Time elapsed: 6.1m --
+Epoch: 1  |  Batch: 267/414  |  Cost: nan
+-- Time elapsed: 6.1m --
+Epoch: 1  |  Batch: 268/414  |  Cost: nan
+-- Time elapsed: 6.1m --
+Epoch: 1  |  Batch: 269/414  |  Cost: nan
+-- Time elapsed: 6.1m --
+Epoch: 1  |  Batch: 270/414  |  Cost: nan
+-- Time elapsed: 6.2m --
+Epoch: 1  |  Batch: 271/414  |  Cost: nan
+-- Time elapsed: 6.2m --
+Epoch: 1  |  Batch: 272/414  |  Cost: nan
+-- Time elapsed: 6.2m --
+Epoch: 1  |  Batch: 273/414  |  Cost: nan
+-- Time elapsed: 6.2m --
+Epoch: 1  |  Batch: 274/414  |  Cost: nan
+-- Time elapsed: 6.2m --
+Epoch: 1  |  Batch: 275/414  |  Cost: nan
+-- Time elapsed: 6.3m --
+Epoch: 1  |  Batch: 276/414  |  Cost: nan
+-- Time elapsed: 6.3m --
+Epoch: 1  |  Batch: 277/414  |  Cost: nan
+-- Time elapsed: 6.3m --
+Epoch: 1  |  Batch: 278/414  |  Cost: nan
+-- Time elapsed: 6.3m --
+Epoch: 1  |  Batch: 279/414  |  Cost: nan
+-- Time elapsed: 6.3m --
+Epoch: 1  |  Batch: 280/414  |  Cost: nan
+-- Time elapsed: 6.4m --
+Epoch: 1  |  Batch: 281/414  |  Cost: nan
+-- Time elapsed: 6.4m --
+Epoch: 1  |  Batch: 282/414  |  Cost: nan
+-- Time elapsed: 6.4m --
+Epoch: 1  |  Batch: 283/414  |  Cost: nan
+-- Time elapsed: 6.4m --
+Epoch: 1  |  Batch: 284/414  |  Cost: nan
+-- Time elapsed: 6.5m --
+Epoch: 1  |  Batch: 285/414  |  Cost: nan
+-- Time elapsed: 6.5m --
+Epoch: 1  |  Batch: 286/414  |  Cost: nan
+-- Time elapsed: 6.5m --
+Epoch: 1  |  Batch: 287/414  |  Cost: nan
+-- Time elapsed: 6.5m --
+Epoch: 1  |  Batch: 288/414  |  Cost: nan
+-- Time elapsed: 6.5m --
+Epoch: 1  |  Batch: 289/414  |  Cost: nan
+-- Time elapsed: 6.6m --
+Epoch: 1  |  Batch: 290/414  |  Cost: nan
+-- Time elapsed: 6.6m --
+Epoch: 1  |  Batch: 291/414  |  Cost: nan
+-- Time elapsed: 6.6m --
+Epoch: 1  |  Batch: 292/414  |  Cost: nan
+-- Time elapsed: 6.6m --
+Epoch: 1  |  Batch: 293/414  |  Cost: nan
+-- Time elapsed: 6.7m --
+Epoch: 1  |  Batch: 294/414  |  Cost: nan
+-- Time elapsed: 6.7m --
+Epoch: 1  |  Batch: 295/414  |  Cost: nan
+-- Time elapsed: 6.7m --
+Epoch: 1  |  Batch: 296/414  |  Cost: nan
+-- Time elapsed: 6.7m --
+Epoch: 1  |  Batch: 297/414  |  Cost: nan
+-- Time elapsed: 6.7m --
+Epoch: 1  |  Batch: 298/414  |  Cost: nan
+-- Time elapsed: 6.8m --
+Epoch: 1  |  Batch: 299/414  |  Cost: nan
+-- Time elapsed: 6.8m --
+Epoch: 1  |  Batch: 300/414  |  Cost: nan
+-- Time elapsed: 6.8m --
+Epoch: 1  |  Batch: 301/414  |  Cost: nan
+-- Time elapsed: 6.8m --
+Epoch: 1  |  Batch: 302/414  |  Cost: nan
+-- Time elapsed: 6.9m --
+Epoch: 1  |  Batch: 303/414  |  Cost: nan
+-- Time elapsed: 6.9m --
+Epoch: 1  |  Batch: 304/414  |  Cost: nan
+-- Time elapsed: 6.9m --
+Epoch: 1  |  Batch: 305/414  |  Cost: nan
+-- Time elapsed: 6.9m --
+Epoch: 1  |  Batch: 306/414  |  Cost: nan
+-- Time elapsed: 6.9m --
+Epoch: 1  |  Batch: 307/414  |  Cost: nan
+-- Time elapsed: 7.0m --
+Epoch: 1  |  Batch: 308/414  |  Cost: nan
+-- Time elapsed: 7.0m --
+Epoch: 1  |  Batch: 309/414  |  Cost: nan
+-- Time elapsed: 7.0m --
+Epoch: 1  |  Batch: 310/414  |  Cost: nan
+-- Time elapsed: 7.0m --
+Epoch: 1  |  Batch: 311/414  |  Cost: nan
+-- Time elapsed: 7.1m --
+Epoch: 1  |  Batch: 312/414  |  Cost: nan
+-- Time elapsed: 7.1m --
+Epoch: 1  |  Batch: 313/414  |  Cost: nan
+-- Time elapsed: 7.1m --
+Epoch: 1  |  Batch: 314/414  |  Cost: nan
+-- Time elapsed: 7.1m --
+Epoch: 1  |  Batch: 315/414  |  Cost: nan
+-- Time elapsed: 7.2m --
+Epoch: 1  |  Batch: 316/414  |  Cost: nan
+-- Time elapsed: 7.2m --
+Epoch: 1  |  Batch: 317/414  |  Cost: nan
+-- Time elapsed: 7.2m --
+Epoch: 1  |  Batch: 318/414  |  Cost: nan
+-- Time elapsed: 7.2m --
+Epoch: 1  |  Batch: 319/414  |  Cost: nan
+-- Time elapsed: 7.2m --
+Epoch: 1  |  Batch: 320/414  |  Cost: nan
+-- Time elapsed: 7.3m --
+Epoch: 1  |  Batch: 321/414  |  Cost: nan
+-- Time elapsed: 7.3m --
+Epoch: 1  |  Batch: 322/414  |  Cost: nan
+-- Time elapsed: 7.3m --
+Epoch: 1  |  Batch: 323/414  |  Cost: nan
+-- Time elapsed: 7.3m --
+Epoch: 1  |  Batch: 324/414  |  Cost: nan
+-- Time elapsed: 7.4m --
+Epoch: 1  |  Batch: 325/414  |  Cost: nan
+-- Time elapsed: 7.4m --
+Epoch: 1  |  Batch: 326/414  |  Cost: nan
+-- Time elapsed: 7.4m --
+Epoch: 1  |  Batch: 327/414  |  Cost: nan
+-- Time elapsed: 7.4m --
+Epoch: 1  |  Batch: 328/414  |  Cost: nan
+-- Time elapsed: 7.5m --
+Epoch: 1  |  Batch: 329/414  |  Cost: nan
+-- Time elapsed: 7.5m --
+Epoch: 1  |  Batch: 330/414  |  Cost: nan
+-- Time elapsed: 7.5m --
+Epoch: 1  |  Batch: 331/414  |  Cost: nan
+-- Time elapsed: 7.5m --
+Epoch: 1  |  Batch: 332/414  |  Cost: nan
+-- Time elapsed: 7.5m --
+Epoch: 1  |  Batch: 333/414  |  Cost: nan
+-- Time elapsed: 7.6m --
+Epoch: 1  |  Batch: 334/414  |  Cost: nan
+-- Time elapsed: 7.6m --
+Epoch: 1  |  Batch: 335/414  |  Cost: nan
+-- Time elapsed: 7.6m --
+Epoch: 1  |  Batch: 336/414  |  Cost: nan
+-- Time elapsed: 7.6m --
+Epoch: 1  |  Batch: 337/414  |  Cost: nan
+-- Time elapsed: 7.6m --
+Epoch: 1  |  Batch: 338/414  |  Cost: nan
+-- Time elapsed: 7.7m --
+Epoch: 1  |  Batch: 339/414  |  Cost: nan
+-- Time elapsed: 7.7m --
+Epoch: 1  |  Batch: 340/414  |  Cost: nan
+-- Time elapsed: 7.7m --
+Epoch: 1  |  Batch: 341/414  |  Cost: nan
+-- Time elapsed: 7.7m --
+Epoch: 1  |  Batch: 342/414  |  Cost: nan
+-- Time elapsed: 7.7m --
+Epoch: 1  |  Batch: 343/414  |  Cost: nan
+-- Time elapsed: 7.8m --
+Epoch: 1  |  Batch: 344/414  |  Cost: nan
+-- Time elapsed: 7.8m --
+Epoch: 1  |  Batch: 345/414  |  Cost: nan
+-- Time elapsed: 7.8m --
+Epoch: 1  |  Batch: 346/414  |  Cost: nan
+-- Time elapsed: 7.8m --
+Epoch: 1  |  Batch: 347/414  |  Cost: nan
+-- Time elapsed: 7.9m --
+Epoch: 1  |  Batch: 348/414  |  Cost: nan
+-- Time elapsed: 7.9m --
+Epoch: 1  |  Batch: 349/414  |  Cost: nan
+-- Time elapsed: 7.9m --
+Epoch: 1  |  Batch: 350/414  |  Cost: nan
+-- Time elapsed: 7.9m --
+Epoch: 1  |  Batch: 351/414  |  Cost: nan
+-- Time elapsed: 7.9m --
+Epoch: 1  |  Batch: 352/414  |  Cost: nan
+-- Time elapsed: 8.0m --
+Epoch: 1  |  Batch: 353/414  |  Cost: nan
+-- Time elapsed: 8.0m --
+Epoch: 1  |  Batch: 354/414  |  Cost: nan
+-- Time elapsed: 8.0m --
+Epoch: 1  |  Batch: 355/414  |  Cost: nan
+-- Time elapsed: 8.0m --
+Epoch: 1  |  Batch: 356/414  |  Cost: nan
+-- Time elapsed: 8.0m --
+Epoch: 1  |  Batch: 357/414  |  Cost: nan
+-- Time elapsed: 8.1m --
+Epoch: 1  |  Batch: 358/414  |  Cost: nan
+-- Time elapsed: 8.1m --
+Epoch: 1  |  Batch: 359/414  |  Cost: nan
+-- Time elapsed: 8.1m --
+Epoch: 1  |  Batch: 360/414  |  Cost: nan
+-- Time elapsed: 8.1m --
+Epoch: 1  |  Batch: 361/414  |  Cost: nan
+-- Time elapsed: 8.2m --
+Epoch: 1  |  Batch: 362/414  |  Cost: nan
+-- Time elapsed: 8.2m --
+Epoch: 1  |  Batch: 363/414  |  Cost: nan
+-- Time elapsed: 8.2m --
+Epoch: 1  |  Batch: 364/414  |  Cost: nan
+-- Time elapsed: 8.2m --
+Epoch: 1  |  Batch: 365/414  |  Cost: nan
+-- Time elapsed: 8.3m --
+Epoch: 1  |  Batch: 366/414  |  Cost: nan
+-- Time elapsed: 8.3m --
+Epoch: 1  |  Batch: 367/414  |  Cost: nan
+-- Time elapsed: 8.3m --
+Epoch: 1  |  Batch: 368/414  |  Cost: nan
+-- Time elapsed: 8.3m --
+Epoch: 1  |  Batch: 369/414  |  Cost: nan
+-- Time elapsed: 8.3m --
+Epoch: 1  |  Batch: 370/414  |  Cost: nan
+-- Time elapsed: 8.4m --
+Epoch: 1  |  Batch: 371/414  |  Cost: nan
+-- Time elapsed: 8.4m --
+Epoch: 1  |  Batch: 372/414  |  Cost: nan
+-- Time elapsed: 8.4m --
+Epoch: 1  |  Batch: 373/414  |  Cost: nan
+-- Time elapsed: 8.4m --
+Epoch: 1  |  Batch: 374/414  |  Cost: nan
+-- Time elapsed: 8.4m --
+Epoch: 1  |  Batch: 375/414  |  Cost: nan
+-- Time elapsed: 8.5m --
+Epoch: 1  |  Batch: 376/414  |  Cost: nan
+-- Time elapsed: 8.5m --
+Epoch: 1  |  Batch: 377/414  |  Cost: nan
+-- Time elapsed: 8.5m --
+Epoch: 1  |  Batch: 378/414  |  Cost: nan
+-- Time elapsed: 8.5m --
+Epoch: 1  |  Batch: 379/414  |  Cost: nan
+-- Time elapsed: 8.6m --
+Epoch: 1  |  Batch: 380/414  |  Cost: nan
+-- Time elapsed: 8.6m --
+Epoch: 1  |  Batch: 381/414  |  Cost: nan
+-- Time elapsed: 8.6m --
+Epoch: 1  |  Batch: 382/414  |  Cost: nan
+-- Time elapsed: 8.6m --
+Epoch: 1  |  Batch: 383/414  |  Cost: nan
+-- Time elapsed: 8.6m --
+Epoch: 1  |  Batch: 384/414  |  Cost: nan
+-- Time elapsed: 8.7m --
+Epoch: 1  |  Batch: 385/414  |  Cost: nan
+-- Time elapsed: 8.7m --
+Epoch: 1  |  Batch: 386/414  |  Cost: nan
+-- Time elapsed: 8.7m --
+Epoch: 1  |  Batch: 387/414  |  Cost: nan
+-- Time elapsed: 8.7m --
+Epoch: 1  |  Batch: 388/414  |  Cost: nan
+-- Time elapsed: 8.7m --
+Epoch: 1  |  Batch: 389/414  |  Cost: nan
+-- Time elapsed: 8.8m --
+Epoch: 1  |  Batch: 390/414  |  Cost: nan
+-- Time elapsed: 8.8m --
+Epoch: 1  |  Batch: 391/414  |  Cost: nan
+-- Time elapsed: 8.8m --
+Epoch: 1  |  Batch: 392/414  |  Cost: nan
+-- Time elapsed: 8.8m --
+Epoch: 1  |  Batch: 393/414  |  Cost: nan
+-- Time elapsed: 8.9m --
+Epoch: 1  |  Batch: 394/414  |  Cost: nan
+-- Time elapsed: 8.9m --
+Epoch: 1  |  Batch: 395/414  |  Cost: nan
+-- Time elapsed: 8.9m --
+Epoch: 1  |  Batch: 396/414  |  Cost: nan
+-- Time elapsed: 8.9m --
+Epoch: 1  |  Batch: 397/414  |  Cost: nan
+-- Time elapsed: 8.9m --
+Epoch: 1  |  Batch: 398/414  |  Cost: nan
+-- Time elapsed: 9.0m --
+Epoch: 1  |  Batch: 399/414  |  Cost: nan
+-- Time elapsed: 9.0m --
+Epoch: 1  |  Batch: 400/414  |  Cost: nan
+-- Time elapsed: 9.0m --
+Epoch: 1  |  Batch: 401/414  |  Cost: nan
+-- Time elapsed: 9.0m --
+Epoch: 1  |  Batch: 402/414  |  Cost: nan
+-- Time elapsed: 9.0m --
+Epoch: 1  |  Batch: 403/414  |  Cost: nan
+-- Time elapsed: 9.1m --
+Epoch: 1  |  Batch: 404/414  |  Cost: nan
+-- Time elapsed: 9.1m --
+Epoch: 1  |  Batch: 405/414  |  Cost: nan
+-- Time elapsed: 9.1m --
+Epoch: 1  |  Batch: 406/414  |  Cost: nan
+-- Time elapsed: 9.1m --
+Epoch: 1  |  Batch: 407/414  |  Cost: nan
+-- Time elapsed: 9.2m --
+Epoch: 1  |  Batch: 408/414  |  Cost: nan
+-- Time elapsed: 9.2m --
+Epoch: 1  |  Batch: 409/414  |  Cost: nan
+-- Time elapsed: 9.2m --
+Epoch: 1  |  Batch: 410/414  |  Cost: nan
+-- Time elapsed: 9.2m --
+Epoch: 1  |  Batch: 411/414  |  Cost: nan
+-- Time elapsed: 9.2m --
+Epoch: 1  |  Batch: 412/414  |  Cost: nan
+-- Time elapsed: 9.3m --
+Epoch: 1  |  Batch: 413/414  |  Cost: nan
+-- Time elapsed: 9.3m --

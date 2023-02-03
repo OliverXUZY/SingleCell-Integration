@@ -1,0 +1,58 @@
+Unable to find image 'zhuoyanxu/single_cell:update' locally
+update: Pulling from zhuoyanxu/single_cell
+d5fd17ec1767: Pulling fs layer
+e19a6dde28b7: Pulling fs layer
+794922120b42: Pulling fs layer
+91a55f6b0796: Pulling fs layer
+6089b86cf2a6: Pulling fs layer
+c9dd5f44e94c: Pulling fs layer
+91a55f6b0796: Waiting
+6089b86cf2a6: Waiting
+0949c7b64b77: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+c9dd5f44e94c: Waiting
+4f4fb700ef54: Waiting
+0949c7b64b77: Waiting
+bf810fc378e8: Pulling fs layer
+1776b763dc2e: Pulling fs layer
+6749257b0358: Pulling fs layer
+6fd79aad5cb9: Pulling fs layer
+bf810fc378e8: Waiting
+1776b763dc2e: Waiting
+6749257b0358: Waiting
+6fd79aad5cb9: Waiting
+e19a6dde28b7: Download complete
+794922120b42: Verifying Checksum
+794922120b42: Download complete
+91a55f6b0796: Verifying Checksum
+91a55f6b0796: Download complete
+6089b86cf2a6: Download complete
+d5fd17ec1767: Verifying Checksum
+d5fd17ec1767: Download complete
+0949c7b64b77: Verifying Checksum
+0949c7b64b77: Download complete
+4f4fb700ef54: Download complete
+bf810fc378e8: Verifying Checksum
+bf810fc378e8: Download complete
+1776b763dc2e: Verifying Checksum
+1776b763dc2e: Download complete
+d5fd17ec1767: Pull complete
+e19a6dde28b7: Pull complete
+6749257b0358: Verifying Checksum
+6749257b0358: Download complete
+794922120b42: Pull complete
+91a55f6b0796: Pull complete
+6089b86cf2a6: Pull complete
+c9dd5f44e94c: Verifying Checksum
+c9dd5f44e94c: Download complete
+6fd79aad5cb9: Verifying Checksum
+6fd79aad5cb9: Download complete
+c9dd5f44e94c: Pull complete
+0949c7b64b77: Pull complete
+4f4fb700ef54: Pull complete
+bf810fc378e8: Pull complete
+1776b763dc2e: Pull complete
+6749257b0358: Pull complete
+6fd79aad5cb9: Pull complete
+Digest: sha256:47cf6d2fbf6934b2c35bd7aff451a1a8a0e7c280d21af35f28009c475d49b6d9
+Status: Downloaded newer image for zhuoyanxu/single_cell:update

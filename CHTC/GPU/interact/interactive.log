@@ -1,0 +1,34 @@
+000 (16742220.000.000) 2022-11-11 11:08:02 Job submitted from host: <128.105.244.191:9618?addrs=128.105.244.191-9618&alias=submit-1.chtc.wisc.edu&noUDP&sock=schedd_6485_bfc3>
+...
+040 (16742220.000.000) 2022-11-11 11:08:23 Finished transferring input files
+...
+001 (16742220.000.000) 2022-11-11 11:08:24 Job executing on host: <128.105.69.89:9618?addrs=128.105.69.89-9618+[2607-f388-2200-100-1270-fdff-fe56-41cc]-9618&alias=e4000.chtc.wisc.edu&noUDP&sock=startd_1557110_860c>
+...
+006 (16742220.000.000) 2022-11-11 11:11:50 Image size of job updated: 1000
+	0  -  MemoryUsage of job (MB)
+	780  -  ResidentSetSize of job (KB)
+...
+004 (16742220.000.000) 2022-11-11 11:11:50 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.00        1         1 
+	   Disk (KB)            :    32     2097152   4055031 
+	   IoHeavy              :                           0 
+	   Memory (MB)          :     0        4096      4096 
+...
+009 (16742220.000.000) 2022-11-11 11:11:50 Job was aborted.
+...
+000 (16742221.000.000) 2022-11-11 11:12:06 Job submitted from host: <128.105.244.191:9618?addrs=128.105.244.191-9618&alias=submit-1.chtc.wisc.edu&noUDP&sock=schedd_6485_bfc3>
+...
+000 (16742231.000.000) 2022-11-11 11:50:54 Job submitted from host: <128.105.244.191:9618?addrs=128.105.244.191-9618&alias=submit-1.chtc.wisc.edu&noUDP&sock=schedd_6485_bfc3>
+...
+009 (16742221.000.000) 2022-11-11 11:51:08 Job was aborted.
+	via condor_rm (by user zxu444)
+...
+009 (16742231.000.000) 2022-11-11 12:05:22 Job was aborted.
+	via condor_rm (by user zxu444)
+...

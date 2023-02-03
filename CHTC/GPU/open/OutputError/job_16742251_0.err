@@ -1,0 +1,7 @@
+Matplotlib created a temporary config/cache directory at /var/lib/condor/execute/slot1/dir_22276/matplotlib-x2n2gv4q because the default path (/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot1/dir_22276/linearTorch.py", line 179, in <module>
+    main()
+  File "/var/lib/condor/execute/slot1/dir_22276/linearTorch.py", line 156, in main
+    optimizer = torch.optim.SGD(model.parameters(), lr=LEARNING_RATE, weight_decay=WEIGHT_DECAY, momentum=MOMENTUM)
+NameError: name 'model' is not defined

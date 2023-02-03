@@ -1,0 +1,9 @@
+Matplotlib created a temporary config/cache directory at /var/lib/condor/execute/slot1/dir_62618/matplotlib-aw_2cfma because the default path (/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot1/dir_62618/linearTorch.py", line 202, in <module>
+    main()
+  File "/var/lib/condor/execute/slot1/dir_62618/linearTorch.py", line 102, in main
+    utils.ensure_path(ckpt_path)
+  File "/var/lib/condor/execute/slot1/dir_62618/utils.py", line 15, in ensure_path
+    basename = os.path.basename(path.rstrip('/'))
+NameError: name 'os' is not defined

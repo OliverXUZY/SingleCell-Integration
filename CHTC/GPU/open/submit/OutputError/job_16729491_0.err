@@ -1,0 +1,11 @@
+  0%|          | 0/28 [00:00<?, ?it/s]  0%|          | 0/28 [00:17<?, ?it/s]
+Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot1/dir_3930/submission.py", line 230, in <module>
+    main()
+  File "/var/lib/condor/execute/slot1/dir_3930/submission.py", line 221, in main
+    sub_RNA = eva_dataframe(testloader_multi, trainloader_multi.dataset.targets, model_pre, eva_RNA, cluster_model_labels = cluster_model_labels, nz_index = nz_index)
+  File "/var/lib/condor/execute/slot1/dir_3930/submission.py", line 166, in eva_dataframe
+    y_hat_batch = recover_from_cluster(y_hat_batch, cluster_model_labels, nz_index, 23418)
+  File "/var/lib/condor/execute/slot1/dir_3930/model_predict.py", line 35, in recover_from_cluster
+    pred = np.zeros([batch_size, n_targets])
+NameError: name 'np' is not defined

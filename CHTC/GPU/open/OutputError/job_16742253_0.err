@@ -1,0 +1,11 @@
+Matplotlib created a temporary config/cache directory at /var/lib/condor/execute/slot1/dir_24531/matplotlib-8urq1jzq because the default path (/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot1/dir_24531/linearTorch.py", line 179, in <module>
+    main()
+  File "/var/lib/condor/execute/slot1/dir_24531/linearTorch.py", line 165, in main
+    train_loss = train(model, trainloader_multi, optimizer, epoch, start_time)
+  File "/var/lib/condor/execute/slot1/dir_24531/linearTorch.py", line 91, in train
+    train_loss = compute_epoch_loss(model, train_loader)
+  File "/var/lib/condor/execute/slot1/dir_24531/linearTorch.py", line 60, in compute_epoch_loss
+    outputs = model(batch_id)
+NameError: name 'batch_id' is not defined

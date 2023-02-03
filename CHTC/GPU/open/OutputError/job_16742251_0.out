@@ -1,0 +1,6 @@
+start reading weightPCA--
+-- Time elapsed: 0.0s --
+finish reading weightPCA--
+-- Time elapsed: 0.7s --
+weightPCA shape:  torch.Size([228942, 1000])
+Projection Exists

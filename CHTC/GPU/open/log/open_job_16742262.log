@@ -1,0 +1,33 @@
+000 (16742262.000.000) 2022-11-11 14:37:02 Job submitted from host: <128.105.244.191:9618?addrs=128.105.244.191-9618&alias=submit-1.chtc.wisc.edu&noUDP&sock=schedd_6485_bfc3>
+...
+040 (16742262.000.000) 2022-11-11 14:37:21 Started transferring input files
+	Transferring to host: <128.104.103.46:9618?addrs=128.104.103.46-9618+[2607-f388-107c-501-ae1f-6bff-feac-5e02]-9618&alias=vetsigian0000.chtc.wisc.edu&noUDP&sock=slot1_1_51741_f711_5238>
+...
+040 (16742262.000.000) 2022-11-11 14:37:21 Finished transferring input files
+...
+001 (16742262.000.000) 2022-11-11 14:37:22 Job executing on host: <128.104.103.46:9618?addrs=128.104.103.46-9618+[2607-f388-107c-501-ae1f-6bff-feac-5e02]-9618&alias=vetsigian0000.chtc.wisc.edu&noUDP&sock=startd_7807_87f7>
+...
+006 (16742262.000.000) 2022-11-11 14:37:30 Image size of job updated: 241
+	241  -  MemoryUsage of job (MB)
+	247620  -  ResidentSetSize of job (KB)
+...
+006 (16742262.000.000) 2022-11-11 14:42:31 Image size of job updated: 7027
+	7027  -  MemoryUsage of job (MB)
+	7195880  -  ResidentSetSize of job (KB)
+...
+006 (16742262.000.000) 2022-11-11 14:47:32 Image size of job updated: 13701
+	13701  -  MemoryUsage of job (MB)
+	14029976  -  ResidentSetSize of job (KB)
+...
+007 (16742262.000.000) 2022-11-11 14:49:40 Shadow exception!
+	Error from slot1_1@vetsigian0000.chtc.wisc.edu: Docker job has gone over memory limit of 16384 Mb
+	0  -  Run Bytes Sent By Job
+	418301  -  Run Bytes Received By Job
+...
+012 (16742262.000.000) 2022-11-11 14:49:41 Job was held.
+	Error from slot1_1@vetsigian0000.chtc.wisc.edu: Docker job has gone over memory limit of 16384 Mb
+	Code 34 Subcode 0
+...
+009 (16742262.000.000) 2022-11-11 15:27:21 Job was aborted.
+	via condor_rm (by user zxu444)
+...

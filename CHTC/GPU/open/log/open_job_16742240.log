@@ -1,0 +1,45 @@
+000 (16742240.000.000) 2022-11-11 12:29:34 Job submitted from host: <128.105.244.191:9618?addrs=128.105.244.191-9618&alias=submit-1.chtc.wisc.edu&noUDP&sock=schedd_6485_bfc3>
+...
+040 (16742240.000.000) 2022-11-11 12:29:43 Started transferring input files
+	Transferring to host: <128.104.103.46:9618?addrs=128.104.103.46-9618+[2607-f388-107c-501-ae1f-6bff-feac-5e02]-9618&alias=vetsigian0000.chtc.wisc.edu&noUDP&sock=slot1_1_51741_f711_5002>
+...
+040 (16742240.000.000) 2022-11-11 12:29:43 Finished transferring input files
+...
+001 (16742240.000.000) 2022-11-11 12:29:44 Job executing on host: <128.104.103.46:9618?addrs=128.104.103.46-9618+[2607-f388-107c-501-ae1f-6bff-feac-5e02]-9618&alias=vetsigian0000.chtc.wisc.edu&noUDP&sock=startd_7807_87f7>
+...
+006 (16742240.000.000) 2022-11-11 12:29:53 Image size of job updated: 1111
+	1111  -  MemoryUsage of job (MB)
+	1138232  -  ResidentSetSize of job (KB)
+...
+006 (16742240.000.000) 2022-11-11 12:34:54 Image size of job updated: 3685
+	3685  -  MemoryUsage of job (MB)
+	3773448  -  ResidentSetSize of job (KB)
+...
+006 (16742240.000.000) 2022-11-11 12:39:31 Image size of job updated: 3691
+	3691  -  MemoryUsage of job (MB)
+	3779860  -  ResidentSetSize of job (KB)
+...
+040 (16742240.000.000) 2022-11-11 12:39:31 Started transferring output files
+...
+040 (16742240.000.000) 2022-11-11 12:39:31 Finished transferring output files
+...
+005 (16742240.000.000) 2022-11-11 12:39:32 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:02:28, Sys 0 00:00:56  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:02:28, Sys 0 00:00:56  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	29542  -  Run Bytes Sent By Job
+	417252  -  Run Bytes Received By Job
+	29542  -  Total Bytes Sent By Job
+	417252  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     0.00        1         1 
+	   Disk (KB)            :   480    20971520  26335977 
+	   Gpus (Average)       : 87569.10        1         1 "GPU-8e4ef0ae"
+	   GpusMemory (MB)      :  1798                       
+	   IoHeavy              :                           0 
+	   Memory (MB)          :  3691       16384     16384 
+
+	Job terminated of its own accord at 2022-11-11T18:39:31Z with exit-code 1.
+...

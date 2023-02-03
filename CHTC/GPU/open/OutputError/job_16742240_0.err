@@ -1,0 +1,22 @@
+Matplotlib created a temporary config/cache directory at /var/lib/condor/execute/slot1/dir_7480/matplotlib-vjrl6z0h because the default path (/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot1/dir_7480/linearTorch.py", line 161, in <module>
+    main()
+  File "/var/lib/condor/execute/slot1/dir_7480/linearTorch.py", line 147, in main
+    train_loss = train(model, trainloader_multi, optimizer, epoch, start_time)
+  File "/var/lib/condor/execute/slot1/dir_7480/linearTorch.py", line 92, in train
+    train_loss = compute_epoch_loss(model, train_loader)
+  File "/var/lib/condor/execute/slot1/dir_7480/linearTorch.py", line 61, in compute_epoch_loss
+    outputs = model(features)
+  File "/home/zhuoyan/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/var/lib/condor/execute/slot1/dir_7480/model_predict.py", line 26, in forward
+    x = self.projections[batch_id]
+KeyError: tensor([[0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        ...,
+        [0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [0.0000, 0.0000, 0.0000,  ..., 3.9557, 0.0000, 0.0000],
+        [0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000]],
+       device='cuda:0')

@@ -1,0 +1,48 @@
+Projection Exists
+start training--
+-- Time elapsed: 11.1s --
+Epoch: 1  |  Batch: 0/414  |  Cost: 8.677763938903809
+-- Time elapsed: 15.0s --
+Epoch: 1  |  Batch: 50/414  |  Cost: 1.9829305410385132
+-- Time elapsed: 3.0m, 18.2s --
+Epoch: 1  |  Batch: 100/414  |  Cost: 1.746934175491333
+-- Time elapsed: 6.0m, 28.2s --
+Epoch: 1  |  Batch: 150/414  |  Cost: 1.5923959016799927
+-- Time elapsed: 9.0m, 26.2s --
+Epoch: 1  |  Batch: 200/414  |  Cost: 2.044421911239624
+-- Time elapsed: 12.0m, 49.0s --
+Epoch: 1  |  Batch: 250/414  |  Cost: 1.6661815643310547
+-- Time elapsed: 15.0m, 50.4s --
+Epoch: 1  |  Batch: 300/414  |  Cost: 2.198154926300049
+-- Time elapsed: 18.0m, 31.3s --
+Epoch: 1  |  Batch: 350/414  |  Cost: 1.7764233350753784
+-- Time elapsed: 21.0m, 35.0s --
+Epoch: 1  |  Batch: 400/414  |  Cost: 1.7112739086151123
+-- Time elapsed: 24.0m, 17.9s --
+Epoch: 1/2  === Train Cost: 216.9226531982422
+-- Time elapsed: 45.0m, 24.8s --
+Epoch: 2  |  Batch: 0/414  |  Cost: 1.9388082027435303
+-- Time elapsed: 45.0m, 26.0s --
+Epoch: 2  |  Batch: 50/414  |  Cost: 1.9079244136810303
+-- Time elapsed: 46.0m, 14.2s --
+Epoch: 2  |  Batch: 100/414  |  Cost: 1.6927790641784668
+-- Time elapsed: 46.0m, 58.0s --
+Epoch: 2  |  Batch: 150/414  |  Cost: 1.572845220565796
+-- Time elapsed: 47.0m, 42.0s --
+Epoch: 2  |  Batch: 200/414  |  Cost: 2.007749080657959
+-- Time elapsed: 48.0m, 29.2s --
+Epoch: 2  |  Batch: 250/414  |  Cost: 1.612542986869812
+-- Time elapsed: 49.0m, 17.0s --
+Epoch: 2  |  Batch: 300/414  |  Cost: 2.1739790439605713
+-- Time elapsed: 50.0m, 2.7s --
+Epoch: 2  |  Batch: 350/414  |  Cost: 1.7493892908096313
+-- Time elapsed: 50.0m, 50.5s --
+Epoch: 2  |  Batch: 400/414  |  Cost: 1.670908808708191
+-- Time elapsed: 51.0m, 40.1s --
+Epoch: 2/2  === Train Cost: 212.89157104492188
+-- Time elapsed: 1.0h, 7.0min --
+linearTorch_PCA_LR_Cluster/
+linearTorch_PCA_LR_Cluster/epoch-last.pth
+linearTorch_PCA_LR_Cluster/log.txt
+linearTorch_PCA_LR_Cluster/cost_epoch2.txt
+linearTorch_PCA_LR_Cluster/epoch-1.pth

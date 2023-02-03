@@ -1,0 +1,41 @@
+000 (16742253.000.000) 2022-11-11 13:38:02 Job submitted from host: <128.105.244.191:9618?addrs=128.105.244.191-9618&alias=submit-1.chtc.wisc.edu&noUDP&sock=schedd_6485_bfc3>
+...
+040 (16742253.000.000) 2022-11-11 13:38:28 Started transferring input files
+	Transferring to host: <128.104.103.46:9618?addrs=128.104.103.46-9618+[2607-f388-107c-501-ae1f-6bff-feac-5e02]-9618&alias=vetsigian0000.chtc.wisc.edu&noUDP&sock=slot1_1_51741_f711_5129>
+...
+040 (16742253.000.000) 2022-11-11 13:38:28 Finished transferring input files
+...
+001 (16742253.000.000) 2022-11-11 13:38:29 Job executing on host: <128.104.103.46:9618?addrs=128.104.103.46-9618+[2607-f388-107c-501-ae1f-6bff-feac-5e02]-9618&alias=vetsigian0000.chtc.wisc.edu&noUDP&sock=startd_7807_87f7>
+...
+006 (16742253.000.000) 2022-11-11 13:38:38 Image size of job updated: 1130
+	1130  -  MemoryUsage of job (MB)
+	1157528  -  ResidentSetSize of job (KB)
+...
+006 (16742253.000.000) 2022-11-11 13:43:39 Image size of job updated: 3699
+	3699  -  MemoryUsage of job (MB)
+	3788000  -  ResidentSetSize of job (KB)
+...
+040 (16742253.000.000) 2022-11-11 13:47:56 Started transferring output files
+...
+040 (16742253.000.000) 2022-11-11 13:47:56 Finished transferring output files
+...
+005 (16742253.000.000) 2022-11-11 13:47:58 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:02:31, Sys 0 00:00:52  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:02:31, Sys 0 00:00:52  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	28880  -  Run Bytes Sent By Job
+	417892  -  Run Bytes Received By Job
+	28880  -  Total Bytes Sent By Job
+	417892  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     0.00        1         1 
+	   Disk (KB)            :   481    20971520  26335977 
+	   Gpus (Average)       : 72688.26        1         1 "GPU-8e4ef0ae"
+	   GpusMemory (MB)      :  1798                       
+	   IoHeavy              :                           0 
+	   Memory (MB)          :  3699       16384     16384 
+
+	Job terminated of its own accord at 2022-11-11T19:47:56Z with exit-code 1.
+...

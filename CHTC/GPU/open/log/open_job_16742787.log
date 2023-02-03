@@ -1,0 +1,37 @@
+000 (16742787.000.000) 2022-11-11 16:52:14 Job submitted from host: <128.105.244.191:9618?addrs=128.105.244.191-9618&alias=submit-1.chtc.wisc.edu&noUDP&sock=schedd_6485_bfc3>
+...
+040 (16742787.000.000) 2022-11-11 16:52:44 Started transferring input files
+	Transferring to host: <128.104.103.46:9618?addrs=128.104.103.46-9618+[2607-f388-107c-501-ae1f-6bff-feac-5e02]-9618&alias=vetsigian0000.chtc.wisc.edu&noUDP&sock=slot1_1_51741_f711_5457>
+...
+040 (16742787.000.000) 2022-11-11 16:52:44 Finished transferring input files
+...
+001 (16742787.000.000) 2022-11-11 16:52:45 Job executing on host: <128.104.103.46:9618?addrs=128.104.103.46-9618+[2607-f388-107c-501-ae1f-6bff-feac-5e02]-9618&alias=vetsigian0000.chtc.wisc.edu&noUDP&sock=startd_7807_87f7>
+...
+006 (16742787.000.000) 2022-11-11 16:52:52 Image size of job updated: 90
+	90  -  MemoryUsage of job (MB)
+	92888  -  ResidentSetSize of job (KB)
+...
+040 (16742787.000.000) 2022-11-11 16:52:52 Started transferring output files
+...
+040 (16742787.000.000) 2022-11-11 16:52:52 Finished transferring output files
+...
+005 (16742787.000.000) 2022-11-11 16:52:53 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	796  -  Run Bytes Sent By Job
+	17767  -  Run Bytes Received By Job
+	796  -  Total Bytes Sent By Job
+	17767  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage   Request Allocated Assigned
+	   Cpus                 :        0         1         1 
+	   Disk (KB)            :       58 209715200 214450094 
+	   Gpus (Average)       :        0         1         1 "GPU-8e4ef0ae"
+	   GpusMemory (MB)      :      397                     
+	   IoHeavy              :                            0 
+	   Memory (MB)          :       90     92160     92160 
+
+	Job terminated of its own accord at 2022-11-11T22:52:52Z with exit-code 1.
+...
